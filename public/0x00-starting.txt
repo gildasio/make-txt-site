@@ -1,0 +1,175 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+Let's talk about starting using *Make TXT Site*.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Dependencies
+- 0x03 Bootstrap
+  - 0x03.00 Download
+  - 0x03.01 Configure
+- 0x04 Templates
+  - 0x04.00 Files
+  - 0x04.01 Variables
+- 0x05 Posts
+- 0x05 Signature
+
+---[[ 0x02 Dependencies ]]------------------------------------------------------
+
+*Make TXT Site* only use simple and common tools in a GNU/*nix environment.
+
+Here is a comprehensive list of tools used:
+
+- bash
+- cat
+- cut
+- date
+- find
+- gpg
+- grep
+- head
+- make
+- make
+- sed
+- sort
+- tail
+- tree
+
+---[[ 0x03 Bootstrap ]]---------------------------------------------------------
+
+You need to get the project locally and change some variables content to get
+start.
+
+------[[ 0x03.00 Download ]]----------------------------------------------------
+
+You can use git:
+
+```
+git clone https://github.com/gildasio/make-txt-site
+```
+
+Or download a zip file:
+
+```
+wget https://github.com/gildasio/make-txt-site/archive/master.zip
+```
+
+------[[ 0x03.01 Configure Variables ]]-----------------------------------------
+
+Edit `Makefile` change init variables values.
+
+Variables for general purpose:
+
+- `PREFIX`: Directory where txt content files are in. `public` for example to
+  use in Gitlab Pages more easily
+- `PUBLIC_INDEX`: Name file (without extension) of public index page. It will be
+  used to generate `PUBLIC_INDEX.txt` and `PUBLIC_INDEX.html` files
+- `HIDDEN_INDEX`: Name file (without extension) of hidden index page. It will be
+  used to generate `HIDDEN_INDEX.txt` and `HIDDEN_INDEX.html` files
+- `HIDDEN_PATTERN`: Some pattern to *Make TXT Site* identify if a file is a
+  public post or a hidden one
+
+Variables to use only in Atom feed:
+
+- `URL`: URL of your site. Remember to escape / using \
+- `AUTHOR`: Your name my fellow
+- `SITE`: Site name
+
+---[[ 0x04 Templates ]]---------------------------------------------------------
+
+After configure init variables you have to configure some templates that is in
+`template` directory.
+
+------[[ 0x04.00 Files ]]-------------------------------------------------------
+
+- `post.txt`: Template used by `make post <filename>` as a post skel
+
+- `index.txt` and `index.html`: Have to match with `PUBLIC_INDEX` variable in
+  `Makefile`. If you change there you have to change here too.
+
+- `priv.txt` and `priv.html`: Have to match with `HIDDEN_INDEX` variable in
+  `Makefile`. If you change there you have to change here too.
+
+------[[ 0x04.01 Variables ]]---------------------------------------------------
+
+In `post.txt` template you can put `{{date}}` anywhere in content and when run
+`make post <filename>` it will be replaced by today date.
+
+In indexes templates you have to put `{{content}}` somewhere to be replaced by a
+file lists, as a `tree` output.
+
+---[[ 0x05 Posts ]]-------------------------------------------------------------
+
+After configure your project (variables and templates) you are ok to go and
+create posts.
+
+You can run `make post <filename>` and a filename named <filename> will be
+created in `PREFIX` (defualt: `public`) directory as an instance of `post.txt`
+template and will open it in your `$EDITOR`.
+
+Otherwise you can simple create a txt file inside `PREFIX` directory and edit
+it as well.
+
+After that, run `make all` to create all files.
+
+---[[ 0x06 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGtVw1wVNUVTvhJ4VGKilBG0LlVCZBmNwmBiKHSSUhMUkMSkw0/0rDv7r6b3Qdv
+39157+4mkcSUqdLWWirFTG10GknHP0TRMsDEMpaWjtBonKkRpkOqRQpxyk9FpBUp
+NT3nvbe7LzvWQdJN5r6359577nfP+c537z46dXzGpMyJ0e66yuve2pb54jQeuD6/
+NT/fYwpqCFUPeUWrWLdzy7Mk9fHjx35LNyb+nQGOMTlOSo1vt1vob4eW2BPasQED
+9rrfobs9NW6UF/vPO6+dzIMRHn970uyBF4/dba/kdBB7nNuL3/7z57b7c/02JtuM
+09ptiAkvfr892sYujdrUF34CbaRC1ZSD202Vk+8cfFVXuXG1c8NCRM3ivLwQOKAw
+3xtShUYDXpXnRegG5oEkeUxVMEnyeDxr1xJMIanShcFJU5NnLB9JqmZinkkE1TYQ
+GuAxQRLUIDET25wVgID4VvtIAyDI8bowFBAfXz5WBIjB49qR/cVybb8uJGUsynSF
+6UGVmbatkJRyLkxh0CjE2DZ5wUMZb9E1ThWXsYAs53qzGooZzJ67iPhYJKpRAc6c
+YYtw7t2qNspSQFZSQ6UBLbHoYlLHTZH80qCGdCrQbSoio7Fec2gkKS3qhOtaGySE
+EVMF7IxQXSFBHolwnQjONZOoOqGkoqYxL0dXWwnT46rB9QjTBSSskhmMqCYMgClR
+g4WZbqpxRjTVFIQ3Ox7Au1KMuQhQMwyPIBXYxrBVIFrwaFZ1BR6haAhbg0XhEWYU
+bcjT1ANcYcsNnCyoquHDYO5QuVI4FgpJ0hoeIzpjCmyDhJggIsxI1ODrWVAQjQep
+BpGzwhWmeggCyCOMxBOZhYjoAqLkTJYs8tscTyF1M+sasdowg1S3kgjlDZGWZVmC
+NxLUuM5cGiDCsYAXMpWUgzQRwHlSrUGUBCRK7lejkByNOV5bMA5X7TCPGsEw8AGs
+pmCGF5zZa6QFwVVJqdL4MvGQpHIF9isjtxGtnMiJqoM5lZM41WLMhCykVmnmBuRH
+ZwbVSDRmRLnJLK7KdfXld1etlotJmWpAxrnRRlrCyHfYXTK5uBjQH6tA9xI5Ggto
+alC2nLJWahWU4FD6mBsopApLfUkdDcGsCIdpDKKmtVnrNZZWVy33V9WUleOqNRTY
+hO7J/BaIM+onaxVYX1xfgLVlrwVeFdZKouDRS6oEaVE1jQSYvaTDXNycYKNXwONZ
+ttg72hwWEU22t4WgKqvKysprrh5UWFVAor4MKPcKLlCjzJ8Pqq7E5yuvrwFYDVh5
+USqAY6ha6ScLUQGTUJvbiNoMlLbwo2gBHieIkHXQKwM6nQ1A3bhJAj4xg5ZWQhpL
+BI+QZuaomtxYXw0goMUItPGYQZD8XlLPIiwSYAZOZ2aQRhnJc86+7+K8kkZfZW09
+TF2Dc3SMbaQN/Goab8H+hipfOe4OnFm9Lo1zHTVj07iSZgga0tkpv7SCgd2QMI0j
+i12DLKUTSQAiTAUGVNUlOWGViZIomzTRSx2J147cCjsmzWJMcTIYNr/gwiSjDtlp
+/RbmG8O3DKiFR5VlNTcwzfJiUdVFPPu7xbhiUulsPUJFMEyQ8ml1mgwVbp64BAh4
+b3EhIUTCko5R4bQ7bEnh3GvvyVDjLjDW1y/AMqo8/79YRmes4Np02Z2xKt2VsiR7
+bFxwekVBS+SNG/E+0NGB22+z1RbKLSG2GBIw6sSIAdM+P8NqUm0I3CI0GrT5ILhC
+26zLhtdCYmUZqZsksTscDhZnXYSDjHfUn6f7ppKlKHjnMXNtisl4JZEJ6CO4cl9s
+nZve2C/X6XVryU7icjI/VcAYs+QmF1i7xNOKb7BUmGO/FDQYZgJjiWdj4j4BUf6f
+daQrjpBaqoWN4hqQFHzbs4JJTJynZL7CmmNUE8XJ43JBSius8GF64LqkBxkKaoo0
+UpI0FhNwDR7F00bgAlYE5NvLy6p8IKqwj1rkeYtqpjjmXHGd/VLrJLdPAzjBFJbC
+6MIDKzG4W0iwCGBrAXH2JqKPupfrChNcCGWrmhz/gM86s9wEKErd7scm3D8aVzgh
+I3NSxs0zvzHh3q7aKQ8+QxtXDL02KfGTfOI4/PWdIU2+LmF5vXDaZ4uW9lcfi7z7
+/B2HXtne1Fcw8tnDmQvPE+mUL3RD3yd1BdMrS4YyiwZerN9ZPrtuXen+JTftmvBB
+3ycXc24I967rvj7ro8Vz3pnz1dMHdu9eta90bWH25N1Tf3Kx64G9Of2d57IPfxpc
+dOe+VR3T/7A3v3Lvf+b+48juCxPOdp5896bDP+v3Tfnj0RmfLp1Vs6yzb3vT/pcv
+eWObTtz21sC0+kjxkqFHvE9NuXCq51iw6fDw8e673ts3c86/frGpd0f+rEOFbx89
+tmNX3rMN56f7Lpx6ev3HXZ0jdVcWbz7j93Vtu+fmHz50peXO4HDurJeU5jWDH2Q9
+qp5pO3tqT8ZQ9oqRh4dlz+uF5+956vdb+3Ie793zU/b+32beGm9/5eOBI2Zxxxtr
+1cm7Vs67b8trRdVT/j7n1p23nD4zd4HW/WrX4JMzVp+47UT/7DUrj/y5Z/z42tn3
+E/bLkcmdpX8tzN46snzw3q98+4EXtp6rGGrix36VsXgjiRf73gx9+IOe327iRT37
+JhZv3/g+ndE7dbN/1aVBUVPy66yvZT62o+7InxY+suf2cL/Z/ZeK3zR90x8ffugk
+eTz3rt9ti/f8eMn+yzc+eUg99M+dvW/3XH5569HhA11zQ+s7nvv6m5fOPhM7U3Ru
+R9Hm+EtPFA6cvrT/6aKT26Yu6/i3Nu5kA3/vuQ8vLN3SUfm9Gweez143/kDWYzo7
+eKX2o+NvlL9z8YnoLYOrfn75vqzj9IXv3/Ff
+=qYXS
+-----END PGP MESSAGE-----
