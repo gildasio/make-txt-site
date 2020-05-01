@@ -3,192 +3,11 @@
   <title>Make TXT Site</title>
   <link href="https://gildasio.gitlab.io/make-txt-site/priv_atom.xml" rel="self" />
   <link href="https://gildasio.gitlab.io/make-txt-site/"/>
-  <updated>2020-05-01T18:35:13Z</updated>
+  <updated>2020-05-01T18:39:02Z</updated>
   <id>https://gildasio.gitlab.io/make-txt-site/</id>
   <author>
     <name>gildasio</name>
   </author>
-<entry>
-  <title>0x00-starting.txt</title>
-  <link href="https://gildasio.gitlab.io/make-txt-site/0x00-starting.txt" />
-  <updated>2020-05-01T18:03:36Z</updated>
-  <id>https://gildasio.gitlab.io/make-txt-site/0x00-starting.txt</id>
-  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
-          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
-          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
-          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
-  
-                                       by Gildásio Júnior
-                                       https://gildasio.gitlab.io/make-txt-site
-
----[[ 0x00 Intro ]]-------------------------------------------------------------
-
-Let's talk about starting using *Make TXT Site*.
-
----[[ 0x01 ToC ]]---------------------------------------------------------------
-
-- 0x00 Intro
-- 0x01 ToC
-- 0x02 Dependencies
-- 0x03 Bootstrap
-  - 0x03.00 Download
-  - 0x03.01 Configure
-- 0x04 Templates
-  - 0x04.00 Files
-  - 0x04.01 Variables
-- 0x05 Posts
-- 0x05 Signature
-
----[[ 0x02 Dependencies ]]------------------------------------------------------
-
-*Make TXT Site* only use simple and common tools in a GNU/*nix environment.
-
-Here is a comprehensive list of tools used:
-
-- bash
-- cat
-- cut
-- date
-- find
-- gpg
-- grep
-- head
-- make
-- make
-- sed
-- sort
-- tail
-- tree
-
----[[ 0x03 Bootstrap ]]---------------------------------------------------------
-
-You need to get the project locally and change some variables content to get
-start.
-
-------[[ 0x03.00 Download ]]----------------------------------------------------
-
-You can use git:
-
-```
-git clone https://github.com/gildasio/make-txt-site
-```
-
-Or download a zip file:
-
-```
-wget https://github.com/gildasio/make-txt-site/archive/master.zip
-```
-
-------[[ 0x03.01 Configure Variables ]]-----------------------------------------
-
-Edit `Makefile` change init variables values.
-
-Variables for general purpose:
-
-- `PREFIX`: Directory where txt content files are in. `public` for example to
-  use in Gitlab Pages more easily
-- `PUBLIC_INDEX`: Name file (without extension) of public index page. It will be
-  used to generate `PUBLIC_INDEX.txt` and `PUBLIC_INDEX.html` files
-- `HIDDEN_INDEX`: Name file (without extension) of hidden index page. It will be
-  used to generate `HIDDEN_INDEX.txt` and `HIDDEN_INDEX.html` files
-- `HIDDEN_PATTERN`: Some pattern to *Make TXT Site* identify if a file is a
-  public post or a hidden one
-
-Variables to use only in Atom feed:
-
-- `URL`: URL of your site. Remember to escape / using \
-- `AUTHOR`: Your name my fellow
-- `SITE`: Site name
-
----[[ 0x04 Templates ]]---------------------------------------------------------
-
-After configure init variables you have to configure some templates that is in
-`template` directory.
-
-------[[ 0x04.00 Files ]]-------------------------------------------------------
-
-- `post.txt`: Template used by `make post <filename>` as a post skel
-
-- `index.txt` and `index.html`: Have to match with `PUBLIC_INDEX` variable in
-  `Makefile`. If you change there you have to change here too.
-
-- `priv.txt` and `priv.html`: Have to match with `HIDDEN_INDEX` variable in
-  `Makefile`. If you change there you have to change here too.
-
-------[[ 0x04.01 Variables ]]---------------------------------------------------
-
-In `post.txt` template you can put `{{date}}` anywhere in content and when run
-`make post <filename>` it will be replaced by today date.
-
-In indexes templates you have to put `{{content}}` somewhere to be replaced by a
-file lists, as a `tree` output.
-
----[[ 0x05 Posts ]]-------------------------------------------------------------
-
-After configure your project (variables and templates) you are ok to go and
-create posts.
-
-You can run `make post <filename>` and a filename named <filename> will be
-created in `PREFIX` (defualt: `public`) directory as an instance of `post.txt`
-template and will open it in your `$EDITOR`.
-
-Otherwise you can simple create a txt file inside `PREFIX` directory and edit
-it as well.
-
-After that, run `make all` to create all files.
-
----[[ 0x06 Signature ]]---------------------------------------------------------
-
------BEGIN PGP MESSAGE-----
-
-owGtVw1wVNUVTvhJ4VGKilBG0LlVCZBmNwmBiKHSSUhMUkMSkw0/0rDv7r6b3Qdv
-39157+4mkcSUqdLWWirFTG10GknHP0TRMsDEMpaWjtBonKkRpkOqRQpxyk9FpBUp
-NT3nvbe7LzvWQdJN5r6359577nfP+c537z46dXzGpMyJ0e66yuve2pb54jQeuD6/
-NT/fYwpqCFUPeUWrWLdzy7Mk9fHjx35LNyb+nQGOMTlOSo1vt1vob4eW2BPasQED
-9rrfobs9NW6UF/vPO6+dzIMRHn970uyBF4/dba/kdBB7nNuL3/7z57b7c/02JtuM
-09ptiAkvfr892sYujdrUF34CbaRC1ZSD202Vk+8cfFVXuXG1c8NCRM3ivLwQOKAw
-3xtShUYDXpXnRegG5oEkeUxVMEnyeDxr1xJMIanShcFJU5NnLB9JqmZinkkE1TYQ
-GuAxQRLUIDET25wVgID4VvtIAyDI8bowFBAfXz5WBIjB49qR/cVybb8uJGUsynSF
-6UGVmbatkJRyLkxh0CjE2DZ5wUMZb9E1ThWXsYAs53qzGooZzJ67iPhYJKpRAc6c
-YYtw7t2qNspSQFZSQ6UBLbHoYlLHTZH80qCGdCrQbSoio7Fec2gkKS3qhOtaGySE
-EVMF7IxQXSFBHolwnQjONZOoOqGkoqYxL0dXWwnT46rB9QjTBSSskhmMqCYMgClR
-g4WZbqpxRjTVFIQ3Ox7Au1KMuQhQMwyPIBXYxrBVIFrwaFZ1BR6haAhbg0XhEWYU
-bcjT1ANcYcsNnCyoquHDYO5QuVI4FgpJ0hoeIzpjCmyDhJggIsxI1ODrWVAQjQep
-BpGzwhWmeggCyCOMxBOZhYjoAqLkTJYs8tscTyF1M+sasdowg1S3kgjlDZGWZVmC
-NxLUuM5cGiDCsYAXMpWUgzQRwHlSrUGUBCRK7lejkByNOV5bMA5X7TCPGsEw8AGs
-pmCGF5zZa6QFwVVJqdL4MvGQpHIF9isjtxGtnMiJqoM5lZM41WLMhCykVmnmBuRH
-ZwbVSDRmRLnJLK7KdfXld1etlotJmWpAxrnRRlrCyHfYXTK5uBjQH6tA9xI5Ggto
-alC2nLJWahWU4FD6mBsopApLfUkdDcGsCIdpDKKmtVnrNZZWVy33V9WUleOqNRTY
-hO7J/BaIM+onaxVYX1xfgLVlrwVeFdZKouDRS6oEaVE1jQSYvaTDXNycYKNXwONZ
-ttg72hwWEU22t4WgKqvKysprrh5UWFVAor4MKPcKLlCjzJ8Pqq7E5yuvrwFYDVh5
-USqAY6ha6ScLUQGTUJvbiNoMlLbwo2gBHieIkHXQKwM6nQ1A3bhJAj4xg5ZWQhpL
-BI+QZuaomtxYXw0goMUItPGYQZD8XlLPIiwSYAZOZ2aQRhnJc86+7+K8kkZfZW09
-TF2Dc3SMbaQN/Goab8H+hipfOe4OnFm9Lo1zHTVj07iSZgga0tkpv7SCgd2QMI0j
-i12DLKUTSQAiTAUGVNUlOWGViZIomzTRSx2J147cCjsmzWJMcTIYNr/gwiSjDtlp
-/RbmG8O3DKiFR5VlNTcwzfJiUdVFPPu7xbhiUulsPUJFMEyQ8ml1mgwVbp64BAh4
-b3EhIUTCko5R4bQ7bEnh3GvvyVDjLjDW1y/AMqo8/79YRmes4Np02Z2xKt2VsiR7
-bFxwekVBS+SNG/E+0NGB22+z1RbKLSG2GBIw6sSIAdM+P8NqUm0I3CI0GrT5ILhC
-26zLhtdCYmUZqZsksTscDhZnXYSDjHfUn6f7ppKlKHjnMXNtisl4JZEJ6CO4cl9s
-nZve2C/X6XVryU7icjI/VcAYs+QmF1i7xNOKb7BUmGO/FDQYZgJjiWdj4j4BUf6f
-daQrjpBaqoWN4hqQFHzbs4JJTJynZL7CmmNUE8XJ43JBSius8GF64LqkBxkKaoo0
-UpI0FhNwDR7F00bgAlYE5NvLy6p8IKqwj1rkeYtqpjjmXHGd/VLrJLdPAzjBFJbC
-6MIDKzG4W0iwCGBrAXH2JqKPupfrChNcCGWrmhz/gM86s9wEKErd7scm3D8aVzgh
-I3NSxs0zvzHh3q7aKQ8+QxtXDL02KfGTfOI4/PWdIU2+LmF5vXDaZ4uW9lcfi7z7
-/B2HXtne1Fcw8tnDmQvPE+mUL3RD3yd1BdMrS4YyiwZerN9ZPrtuXen+JTftmvBB
-3ycXc24I967rvj7ro8Vz3pnz1dMHdu9eta90bWH25N1Tf3Kx64G9Of2d57IPfxpc
-dOe+VR3T/7A3v3Lvf+b+48juCxPOdp5896bDP+v3Tfnj0RmfLp1Vs6yzb3vT/pcv
-eWObTtz21sC0+kjxkqFHvE9NuXCq51iw6fDw8e673ts3c86/frGpd0f+rEOFbx89
-tmNX3rMN56f7Lpx6ev3HXZ0jdVcWbz7j93Vtu+fmHz50peXO4HDurJeU5jWDH2Q9
-qp5pO3tqT8ZQ9oqRh4dlz+uF5+956vdb+3Ie793zU/b+32beGm9/5eOBI2Zxxxtr
-1cm7Vs67b8trRdVT/j7n1p23nD4zd4HW/WrX4JMzVp+47UT/7DUrj/y5Z/z42tn3
-E/bLkcmdpX8tzN46snzw3q98+4EXtp6rGGrix36VsXgjiRf73gx9+IOe327iRT37
-JhZv3/g+ndE7dbN/1aVBUVPy66yvZT62o+7InxY+suf2cL/Z/ZeK3zR90x8ffugk
-eTz3rt9ti/f8eMn+yzc+eUg99M+dvW/3XH5569HhA11zQ+s7nvv6m5fOPhM7U3Ru
-R9Hm+EtPFA6cvrT/6aKT26Yu6/i3Nu5kA3/vuQ8vLN3SUfm9Gweez143/kDWYzo7
-eKX2o+NvlL9z8YnoLYOrfn75vqzj9IXv3/Ff
-=qYXS
------END PGP MESSAGE-----</content>
-</entry>
 <entry>
   <title>0x02-tips/vim.txt</title>
   <link href="https://gildasio.gitlab.io/make-txt-site/0x02-tips/vim.txt" />
@@ -504,6 +323,102 @@ HqodV70rcvnEe5e382LrlsrQdb9FHfh9lz0me2jBqmdzKm8UMu11f6U57yYPjUhv
 iC/c7XjlSM0AZ2rVeda5Znnol7EZ92r2O7qU85P3DT7oHN+UvHqBXQm7dmzbJ4N/
 aT11aeX42uRLmUVge1XdMXtM4vtTO1bf+Hxt0+yvTpzubH79wd8=
 =vPIn
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x01-features/gpg.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x01-features/gpg.txt" />
+  <updated>2020-05-01T18:38:59Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x01-features/gpg.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+This topic explain how *Make TXT Site* use GPG improving user security.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Signing
+- 0x03 Verify
+- 0x04 Signature
+
+---[[ 0x02 Signing ]]-----------------------------------------------------------
+
+As *Make TXT Site* works with txt files it's to sign a post file.
+
+To use this feature you need to have a key configured in your keyring GPG file.
+
+After create and edit your post you can run `make sign <filename>`.
+
+This command will generate a sign to that file and append it to the same file.
+This way it's a standalone file and its signature.
+
+> You can sign index.txt files as well.
+
+---[[ 0x03 Verify ]]------------------------------------------------------------
+
+After signing a post/file your users can verify that file to improve integrity.
+
+To do so, there is a simple command:
+
+```
+curl -s $POST_URL | gpg --verify
+```
+
+For example:
+
+```
+$ curl -s 'https://gildasio.gitlab.io/make-txt-site/index.txt' | gpg --verify
+gpg: Signature made Fri 01 May 2020 06:35:27 PM -03
+gpg:                using RSA key 51954F0B84A661554DDBBE0805709A504810CE93
+[...]
+```
+
+> Cropped text aren't important.
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQtME2ccL2oFT1GqDqej85PJ6qsPaItAlFkeRSxIgWLmDLRHe7Qn7V29u0K7
+1UB8TGcmKirOZQsYFTaUOUWnIT6nzk033XxnyzadZhOdYsRNw3zsu/taWl2ymPBd
+c/3u//x9v///f7c6ur8oKkLs/tA4M+b02oi2SEl5pN1tV3Bermx7QzcILTO/0O55
+YfAXMAgIe+2wkL0f3aHeD+8AOfj5GxTw2vA9VPtDds9EQZdC5gcyaCE3+3vFcriR
+IzXKFFAAZBcexYwu8xS/eYoZYUJi3s2PIAajmM3IGmHHnjnU/65yH8ghnbajm1iS
+BrOOdlAkzbyor4Pj3GyaUmmHAXDor7CTnBMvV5C00oVXEnJYJDlLcgSGyeXyefOA
+yqtSgVyKY2hQWirvy8Iwk4NkAUe7SSsgvG4nTlLAQVeDSfkwMTC9aQLFMPEk4GEJ
+kGPMAaTLzdBVJGXnJQxgCauHITmfIgxaIjDRmX0FxkOThx0UPQih0TYJArNTEAh6
+VIM5BENW+NCTRlDinIcJ56zXpW/gMEzH/oefapqpZEE1yTkArBaoIJ0EC0hOxnML
+WJgW4MBNs0gD2TLRAqUcz34FISAFPtoDKIKw8S4OvIqALpWED1hpqoK0QwMbgMWB
+RgwvZvhz8BUJBNRVcLAeVgbGgo6UDRA2kkPWQl4+uBWnAOOhgIXvKoRqGu9O4S4i
+3aIINIOVdrn4ANWk0wnsBEUwQkhkD6FxDhwdQ0iDu90E/IO5BBUMC4MFQAnhqnEf
+IgJG4KAH7qQpIuRPcqwQWaAAQkgHcwNIhXwkZSO8ihClOAxIOJ3h/RYsfR9bLkgh
+G+gRVC+lAFSgkW94VkBWhfKFiIBHR4NBQMAcYQ+MBCyyDVafnsITAwtMCiRAS+gS
+YDkNwywWCwanyAnkLBhvLCg2mUuK8uCbDL6egVyOcglGmJ5m4JDivH/AbzwIespe
+9CWi7KVU9nwS+JAWmhzgwm0E0DMkgHOXD6uYpEpSAVVymlqbljQVGPOBXKVGPs8t
+D8sTWFSsE/pXm5iq1ehVGSkaXXJyolarycrKyMhWpai0U1WpOq1Kk5KoysxOVWPz
+FApFKTppOshkaNhZcBYIWHucISgZx3NMM7CHuPDyh816XzoAw97rpx4giogSSWPH
+DShcXzB4STNekv/TwajgR1Pcj/9SirBBMUGJ4uywJ8nfXLtuldXkiNmWfhe7Wi9L
+3hAXrdq88WTiVk/bH4e3XPRkD30nK3eZWtrdkdLYvvflrogqzjL61yV3LtF7H30Z
+1dV5c5jy8Lpyw5HO/OsDKzufxExkm7OK65qeWGasehpXs39MueFAG1Y2zXRWdyhj
+zKlG3ahJklzjq/oDS/33Lmx4fW3l/tHerTe+jZ/c2Jzxc3v99kuLDh5q6Ijd99ZH
+n5nTL9Ixus3qiLyF72pWGW1jv6If7753zBD59Z/72r3Snm3xVxdmW+rOuUSp0w0l
+xmtPO8mZEtv9gSXmFaIf9jxoe5xye+ecp0rxmRlDxHv0SQ8KRxzvOLGaKopNmFD3
+/qkaq0Qycdhtz8ja0h15JYZo6Y3Zr6hKmBW7GOt82YiE6HEnMuYnzIkb8ssE6Y9v
+GzcsqS++fIGrG/2pP2/854wPS7ZHG5zTkr8Q6Q3f39n0t880fGnS7jO17YPi73qb
+7jRvoRcvu9s16uHy+qKesa1XWhMKGkrPn/2dubQxt8V+VVG7I3fWgHPXuBZpbNbp
+D8oeZO+8PXTBx+e/q3H1l+2ZjN1XL14zN3I6Fll4q/ZU8l+PFtWLZ1ZMXPmw6UhT
+16Irs9Z1WzLurtcOma8/5m1Ze/PxPyt3tb50PDW6cZBuwZo4SU9x4ZnXtGsaNKul
+eYdLu09mRywvGH5um2WkqLrJMrum55P4uLLCwb9t0WYuuOX4Fw==
+=gVx1
 -----END PGP MESSAGE-----</content>
 </entry>
 </feed>

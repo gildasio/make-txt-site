@@ -38,39 +38,53 @@ After signing a post/file your users can verify that file to improve integrity.
 To do so, there is a simple command:
 
 ```
-curl $POST_URL | gpg --verify
+curl -s $POST_URL | gpg --verify
 ```
+
+For example:
+
+```
+$ curl -s 'https://gildasio.gitlab.io/make-txt-site/index.txt' | gpg --verify
+gpg: Signature made Fri 01 May 2020 06:35:27 PM -03
+gpg:                using RSA key 51954F0B84A661554DDBBE0805709A504810CE93
+[...]
+```
+
+> Cropped text aren't important.
 
 ---[[ 0x04 Signature ]]---------------------------------------------------------
 
 -----BEGIN PGP MESSAGE-----
 
-owGlVQ1QFFUcP5CPc9GwzIto1KcRkN4eCOgUpAI6g594yhmGA8dy9+7uxbF77i4e
-Nx2l6IyIgiipYJphRDXyMaBTagMlDkVGFIWKoqNlZebIKEQwftHbfQd31kzTDG9v
-9t7+P37/3/v939stnThOofTytR3QLpnUUeZV6+ed5W+2mTVinphRs/MOcA+9NMjs
-n8aRnyvAZRyNo9zxTnLHfie+A5LglG7YIHk959jtdMc9hkIuTZgThOEIWu8cNdN4
-QhM3qeRyABLniaInl17t1Kv1hBMxS2lOQnEERa8n0YQ79dii/nNkOUASshrPVAqI
-A8vOnGIRx//fXIso2oTYiAgzBmBwvsaMRCuTpUFcRA6TDWncJFpAIqQomqbXrweR
-eZGRYCkr8hxIT6fHMihKZ0ECEDkbMgCYZ7MyiAUWzg5mrcSFgW6dDqTgwrNArgBB
-kjYJoBwbz21ErFmy8ECAhlweiQ6NB7U5QMctGisxiRrtsVDyIEOTaRQmZmYxEfIY
-DV6FPDI5yFOM7GTEXN5Ts9GUsZGjqAThX/rYOT5bAHYkWgDuFjAhKxQAEsMkbYGA
-ywIG2DiBeLBaOk6WVJTUN0GZKXBwuYCF0CilWJiNEKdkQwcwcKwJmXGAEeDm4CBe
-MvPSOqSOuAATTCLuh4HHWDiRNQJoRCKJlutK4AaGBXwuCzKlXUVYvSKls0wOXJCp
-cW0GA5eTIwHYkdUKzJCFvAxJ4jE10cKQZchlGJsN4j9cS3ZhWAzmIiXD2RkHEQIj
-iDiDsXIsdOcjUZCRZQkwhQXgNRdTuR5ijTBP45aUwYDQavXcbyOtH+OWG5FQcO0R
-0q8Imagso7ThBZnZRlLPLQReOjkYEBMWodl1JHCTjbj7nFoSBjcYySLgSJziUjmW
-ojIzMyl8iqwgRLsqRadfu2YFfo3hdzOgaVJIjnCv12Nzj2XJFLXdO9pH4aVUTFXN
-8Fm9d1XA1mpm7cqeZuXIV8LXW/o0KKjxk0Ys0y2B930m+tZPK9o1eNfObT5U/7Mw
-zXuhI628qoQ3LTI2wjpBTaPY+2ftrQOJj65V1uxZcVFwtFckxhcObt7dzXeVPbvh
-w4TWc2VN6q7Owmv+TU82D58eXJIAbujKX8x/L+DUTBWVHNpcmzzOOOX7RM2b3+zZ
-UHcraH/wGa/DRVOe9x2ekz60bvztRftrbyzrX6F4kDLI+08wgYMNNwviDWknci+A
-N5bXLN1y5GwiimVsk+/92LGj/d3o1PAdX2r7frj9evJzp4N21ncNtSxX3LF/3Vul
-7A5+SbX7QV19X9/12xWx5w8+PBfkF9TjjL80N7wUNV6I5xVHKncW/tRQfb6jsqI8
-fO1RwW99/760eWB1w6SBXdTchk2B/b92aCd/AT5um/pyZ9i24IA0reXqcbj1WLSt
-u+CD6Nm9h2Miyyd7b0v7ZHbR28Jvv6RPOJ2n+urAkm8vZcfs0SU/CtPFBed3zp/3
-R3WxttPS5vz8M2sbl9G++UDL5ZQXNDOOrHliuOlKaFdJ6vbAUNXChqiiWtWVuHym
-pJhNj5pnrPtIe+Wp745fLFe/Vba3Mj5Z/H3B3dZ3lE1c8a3pIc1+vsN9QclwZkhP
-VEBpY8Hqli3+D2+FLG672ptaFXd5ABgLhrQnVEfTNj3krwdrmljbhYFjtdfN1p6W
-kEP7uv96xsIVa8VPbwK98v2+1HsVf+57OmP+yZN/Aw==
-=qW1X
+owGlVQtME2ccL2oFT1GqDqej85PJ6qsPaItAlFkeRSxIgWLmDLRHe7Qn7V29u0K7
+1UB8TGcmKirOZQsYFTaUOUWnIT6nzk033XxnyzadZhOdYsRNw3zsu/taWl2ymPBd
+c/3u//x9v///f7c6ur8oKkLs/tA4M+b02oi2SEl5pN1tV3Bermx7QzcILTO/0O55
+YfAXMAgIe+2wkL0f3aHeD+8AOfj5GxTw2vA9VPtDds9EQZdC5gcyaCE3+3vFcriR
+IzXKFFAAZBcexYwu8xS/eYoZYUJi3s2PIAajmM3IGmHHnjnU/65yH8ghnbajm1iS
+BrOOdlAkzbyor4Pj3GyaUmmHAXDor7CTnBMvV5C00oVXEnJYJDlLcgSGyeXyefOA
+yqtSgVyKY2hQWirvy8Iwk4NkAUe7SSsgvG4nTlLAQVeDSfkwMTC9aQLFMPEk4GEJ
+kGPMAaTLzdBVJGXnJQxgCauHITmfIgxaIjDRmX0FxkOThx0UPQih0TYJArNTEAh6
+VIM5BENW+NCTRlDinIcJ56zXpW/gMEzH/oefapqpZEE1yTkArBaoIJ0EC0hOxnML
+WJgW4MBNs0gD2TLRAqUcz34FISAFPtoDKIKw8S4OvIqALpWED1hpqoK0QwMbgMWB
+RgwvZvhz8BUJBNRVcLAeVgbGgo6UDRA2kkPWQl4+uBWnAOOhgIXvKoRqGu9O4S4i
+3aIINIOVdrn4ANWk0wnsBEUwQkhkD6FxDhwdQ0iDu90E/IO5BBUMC4MFQAnhqnEf
+IgJG4KAH7qQpIuRPcqwQWaAAQkgHcwNIhXwkZSO8ihClOAxIOJ3h/RYsfR9bLkgh
+G+gRVC+lAFSgkW94VkBWhfKFiIBHR4NBQMAcYQ+MBCyyDVafnsITAwtMCiRAS+gS
+YDkNwywWCwanyAnkLBhvLCg2mUuK8uCbDL6egVyOcglGmJ5m4JDivH/AbzwIespe
+9CWi7KVU9nwS+JAWmhzgwm0E0DMkgHOXD6uYpEpSAVVymlqbljQVGPOBXKVGPs8t
+D8sTWFSsE/pXm5iq1ehVGSkaXXJyolarycrKyMhWpai0U1WpOq1Kk5KoysxOVWPz
+FApFKTppOshkaNhZcBYIWHucISgZx3NMM7CHuPDyh816XzoAw97rpx4giogSSWPH
+DShcXzB4STNekv/TwajgR1Pcj/9SirBBMUGJ4uywJ8nfXLtuldXkiNmWfhe7Wi9L
+3hAXrdq88WTiVk/bH4e3XPRkD30nK3eZWtrdkdLYvvflrogqzjL61yV3LtF7H30Z
+1dV5c5jy8Lpyw5HO/OsDKzufxExkm7OK65qeWGasehpXs39MueFAG1Y2zXRWdyhj
+zKlG3ahJklzjq/oDS/33Lmx4fW3l/tHerTe+jZ/c2Jzxc3v99kuLDh5q6Ijd99ZH
+n5nTL9Ixus3qiLyF72pWGW1jv6If7753zBD59Z/72r3Snm3xVxdmW+rOuUSp0w0l
+xmtPO8mZEtv9gSXmFaIf9jxoe5xye+ecp0rxmRlDxHv0SQ8KRxzvOLGaKopNmFD3
+/qkaq0Qycdhtz8ja0h15JYZo6Y3Zr6hKmBW7GOt82YiE6HEnMuYnzIkb8ssE6Y9v
+GzcsqS++fIGrG/2pP2/854wPS7ZHG5zTkr8Q6Q3f39n0t880fGnS7jO17YPi73qb
+7jRvoRcvu9s16uHy+qKesa1XWhMKGkrPn/2dubQxt8V+VVG7I3fWgHPXuBZpbNbp
+D8oeZO+8PXTBx+e/q3H1l+2ZjN1XL14zN3I6Fll4q/ZU8l+PFtWLZ1ZMXPmw6UhT
+16Irs9Z1WzLurtcOma8/5m1Ze/PxPyt3tb50PDW6cZBuwZo4SU9x4ZnXtGsaNKul
+eYdLu09mRywvGH5um2WkqLrJMrum55P4uLLCwb9t0WYuuOX4Fw==
+=gVx1
 -----END PGP MESSAGE-----
