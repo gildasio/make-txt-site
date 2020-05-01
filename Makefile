@@ -61,18 +61,18 @@ help:
 all: posts hidden feed
 
 $(PUBLIC_INDEX):
-		sed 's/{{content}}/$$ tree -tr/' template/$(PUBLIC_INDEX).txt > $(PREFIX)$(PUBLIC_INDEX).txt
-		sed 's/{{content}}/$$ tree -tr/' template/$(PUBLIC_INDEX).html > $(PREFIX)$(PUBLIC_INDEX).html
+		sed 's/{{content}}/$$ tree /' template/$(PUBLIC_INDEX).txt > $(PREFIX)$(PUBLIC_INDEX).txt
+		sed 's/{{content}}/$$ tree /' template/$(PUBLIC_INDEX).html > $(PREFIX)$(PUBLIC_INDEX).html
 
 $(HIDDEN_INDEX):
-		sed 's/{{content}}/$$ tree -tr/' template/$(HIDDEN_INDEX).txt > $(PREFIX)$(HIDDEN_INDEX).txt
-		sed 's/{{content}}/$$ tree -tr/' template/$(HIDDEN_INDEX).html > $(PREFIX)$(HIDDEN_INDEX).html
+		sed 's/{{content}}/$$ tree /' template/$(HIDDEN_INDEX).txt > $(PREFIX)$(HIDDEN_INDEX).txt
+		sed 's/{{content}}/$$ tree /' template/$(HIDDEN_INDEX).html > $(PREFIX)$(HIDDEN_INDEX).html
 
 list:
 		echo '.' > output/public
 		echo '.' > output/hidden
-		tree -tr $(PREFIX) -I imgs | tail -n +2 | head -n -2 | grep -v '$(PUBLIC_INDEX)' | grep -v '$(HIDDEN_INDEX)\.' | grep -v '$(HIDDEN_PATTERN)' >> output/public
-		tree -tr $(PREFIX) -I imgs | tail -n +2 | head -n -2 | grep -v '$(PUBLIC_INDEX)' | grep -v '$(HIDDEN_INDEX)\.' >> output/hidden
+		tree $(PREFIX) -I imgs | tail -n +2 | head -n -2 | grep -v '$(PUBLIC_INDEX)' | grep -v '$(HIDDEN_INDEX)\.' | grep -v '$(HIDDEN_PATTERN)' >> output/public
+		tree $(PREFIX) -I imgs | tail -n +2 | head -n -2 | grep -v '$(PUBLIC_INDEX)' | grep -v '$(HIDDEN_INDEX)\.' >> output/hidden
 
 posts: $(PUBLIC_INDEX) list
 		sed -i -e "${LINE_PUBLIC_TXT}r output/public" $(PREFIX)$(PUBLIC_INDEX).txt

@@ -40,17 +40,17 @@ almost everywhere. This is the most important why. But there is some others:
 
 ---[[ 0x02 Documentation ]]-----------------------------------------------------
 
-$ tree -tr
+$ tree 
 .
-├── atom.xml
+├── 0x00-starting.txt
+├── 0x01-features
+│   ├── atom.txt
+│   ├── gpg.txt
+│   └── hidden-posts.txt
 ├── 0x02-tips
 │   ├── gitlab-pages.txt
 │   └── vim.txt
-├── 0x01-features
-│   ├── hidden-posts.txt
-│   ├── gpg.txt
-│   └── atom.txt
-└── 0x00-starting.txt
+├── atom.xml
 
 ---[[ 0x03 Contact ]]-----------------------------------------------------------
 
