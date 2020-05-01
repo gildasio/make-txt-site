@@ -42,11 +42,11 @@ almost everywhere. This is the most important why. But there is some others:
 
 $ tree -tr
 .
+├── priv_atom.xml
+├── atom.xml
 ├── 0x02-tips
 │   ├── gitlab-pages.txt
 │   └── vim.txt
-├── priv_atom.xml
-├── atom.xml
 ├── 0x01-features
 │   ├── hidden-posts.txt
 │   ├── gpg.txt
