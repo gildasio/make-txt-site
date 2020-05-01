@@ -1,0 +1,74 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+Sites made by *Make TXT Site* are simple to be hosted. Gitlab pages is a great
+way to do that.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Gitlab Pages
+- 0x03 Signature
+
+---[[ 0x02 Gitlab Pages ]]------------------------------------------------------
+
+All you need is to create a `.gitlab-ci.yml` file in root directory. A example
+content to this file:
+
+```
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```
+
+Maybe you have to change somethings in these file, for example `public` and 
+`master` to correspond your posts directory and branch but it isn't likely.
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVHtMFEcY54ArsJYKwYBSISMarpDbOx5K7FkJiFWxBZRSS0S927sb7hb2di+7
+g+X0DKIVxUeDbaGFoIFSMLFK1FpRWnm2IA9La1BroTaigdhUCYq0Ba2dvQU5+kfT
+1NnN5Jvv8Zvf98gUebu5eMrk1rJ1a3y++1B2Ur5U72OiEUPpSStlgoIK5aItJ4rK
+wPTSikuS/qmc+icdJpXP/Ihpf7u0Y7sd70AKsIsbVohWZxmb7dN+M1CkT6WwAwX2
+ILX2Z2oSC6Rklm6aNADJzxlFK31apV2r1EqcJLUYZpcoTqFotZK3xJ2YkdS/Lr0N
+rKYZY2ulQHNgbWs9S3P8f401I2QVNGq1CQNQOF4ltUhFc2oLlQ1J3CRSoBEkCJIk
+MzJARG5EBEhkEc+BzZvJ51kE8RbGFYCFMkIxhfAkfB9IS08Doj4cUDwEAm2xMhAg
+DughMHMCgkYVzlVkCBxDBGgBUMDEQwoR71I20dPIAWSmkMqJcSRI4xKel6/ImHTK
+Xzo4oCUxaorZOpGZpIvGyZhYCuXwzhWc6fm/iRFEPMMAG5cDWAiNYilw+gaxFhAX
+RTfZStJAq2wWRgcyaVxKmgU8xyFgpHloQBxvU4F4AHMpsc6EgWMRZJEIg8wYTozQ
+EIROpyNoC6aqARRjpVmoYfAVAiIIRw80eNYE5DAboZXhbOLZwNNWJFpIAA1mDiiS
+OQzJmqQOqVQqBbZRPKIzKQNyQADcUWSeFElgzdEztAEfOJaxSUAWCg8A76BDJFE2
+PBJi7mZqq2NCDGaKNeGR4SzQcZMg5orMUICOPJQgk+OnMgU6CV4HKNYICJ2ErHPA
+cDwPBSuH9RidB1Y8dcJ0uRwBep5iDWagz0GAxr/AKhBg6GzI2Jynzqn3zzN7BFHo
+Gu3uIvN0CfJf4L6+OGXWezXU20l9DZ5Tb6vcVXxHXQgvnylN4/HZE/JIt7YVce8L
+b9xde2tt3uy5T85uPBTccjrI/ldG/Z4RdUdU1BxbGLNhj17n3rugrfx2ycfbs1xn
+ff/bmZMx1P0TsmNwPGakTdnzybbBpQNL3LPPptSH3AzyG2v8s6D/3v2mH3LKs1oT
+5iXd8Ove0th+70aubDSio+vK8JyAuKu9EYtD6iaGFirPh6W6cUmPDYe6TQe+TiuJ
+Lm5u6v4sMH/h2CpP+/ami83eeXUP4t1Tv+zzi03xON/2UsD8+sGyeK9e/4kvgi76
+jrru31t9OXF3mH9tmtba6Xdh+zfKZWPq0s7Lc5cXvWoYGNF+dC1m/EHXoqS6Lr9d
+RQ93lSoVlZpz8ivC+krzCwFM1eelazwvvb6c3XehOjz9VPnP/TK/0JtZx2sCYnue
+zl8CFynDL/ncaTsQsuF6QYViKHtb4pwhzo0MiHy0slOQL/cdH9tRnlV0PbAqeKKy
+I6r59NPOjuFvg8H4T7Jf/Y/F3Lm10qPyx/Tjj3p9j+7fcTi0IlTV8ctrZSFn956S
+aZfFLqlv3NpTWLJi1LPdmhyaWrWz4nDiUODuxoNfpTxueRK3sep28eOozsZDJ30a
+5Pkve0SGLK49V/Np7ZEEpuGVdu+hDzS22KiBecbkhNi7R+TRm65U5m/ad3DgTN/V
+wtD5/XUtXqNp1wq81av/eOf36p3DGdrm1DcDHsaqI/OUTaUuE6sGzS8e/Rs=
+=tFng
+-----END PGP MESSAGE-----

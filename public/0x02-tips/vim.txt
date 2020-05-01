@@ -1,0 +1,57 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+A simple vim configuration to made these type of files better to edit.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Vim Configs
+- 0x03 Signature
+
+---[[ 0x02 Vim Configs ]]-------------------------------------------------------
+
+Put these in your `.vimrc`:
+
+```
+set tw=80
+set colorcolumn=80
+hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+```
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwMHIWjArwEPg3GTGtcxfktjLMnP1SipK4tZMNFFAgHgQgLDQBWEIqgAq
+CFfHhVBfAyGB8jVAUgGioQZEAAVAsshsoHQNQh2KKRCop16joA5UoRtfAxfWBTJ0
+IdIQm6ASChB1yKbEQ2C8Tk28TjzETRBhkLYaiBNhpsTHQ1RD3M6F4im8IKlSwT0z
+J+XwwuLMfAWvw7vyMvOLiNWbUVJSUGylr58ONCARqF8vPbMkJzFJLzNfPzcxO1UX
+GEm6xZklqVxcurq60dEKBhUGBgqeeSVF+QqxsbqUAC4uR4XizNyCnFQFYGpQSM7P
+S8tMLy1KLMnMz1MoyVfITUxJVSjJSC0GkpUFqQr5aQppmTmpxQpJqSUlqUUgJakp
+mSV6SC4zVAjJd6bUXSCX6SL5E8IBGw1hGimEAd3rDHZvMUTIWCE4Mz0vsaS0CDmg
+UBSS7ywuroDSEmhIZOYpVOaXFikk6AHDrCg5wYqLKyEhgas4Faig3NbCAMxKzs/J
+LwISpbl5IKGMTKAbgCLOYBGFZGDg5Sal26YkFmWnF6VWKqSXZiJxweYh/IDkM0oC
+lourk8mYhYGRg0FWTJElcKo/d8uyxFDf2/s4YOUCKxOoMGDg4hSAi7ALMEycN+dT
+otizMr5FTSlf/6pYaBXfWHdubrfDnt7He6fOns53yC9i0u8zXdJ3Sl9U6DH+uGtR
+ZhuUmfbokJmV3aynZYwOBv9yZaaX31q+v2Tfxq3TLszS7/I8meIUwZt7RsX/XIvi
+pYadExUDDqS8+2W2tXf9utP1z+zlfhzYGn7MKWhr8rak17kyoauvXZxzSEGvbC/D
+dcGliTr/T99bGmm42O21h+SJ80eTvopGH5v1z24B07YN8y9uc1jG3PXBP/9pBa/i
+LXd5t1kZOxlf75/+e9PmBsX/n+a3tv82T/2SNj0nObiH9fiSr/v4l019lxi9femt
+mEWrF/m5sb8P9HqaWTJ9Vb274+6365wvrlh21WybV7GzjdNJ5lOb7kVtlC2Ie6h3
+7++n8is9Jg9XqgqdnG17PfmzcdF/o+Tsdx0CMV8enZi3+67ucUN5t0tBXPeadxzs
+rlI2z5mWcdlqvUXkbU1Rhy6b8irTrKN+7LcPGXuvz9ndvlzjNU9tu2vHyt9VSfN3
+TvByv17H2dGyrCda/tZZB38fG/Xis6Km01LmpQo2Fe65v2vZqrYML/VC7kTpc4t2
+tU+XXHrs7iwOpRkW5w7PnPHvkAa/ZdrGzqvTLmhu3753qbjf1xoJi2OZ0tXHj59N
+iUyocDO+ERHHoC7C13i5/Hi367lNajeUlmSd/Kx3w9JmpfDEPRGRFqEnLL5t4V/K
+WJjym1ciz2ADAA==
+=ebQ0
+-----END PGP MESSAGE-----
