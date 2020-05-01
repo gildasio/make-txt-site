@@ -1,0 +1,76 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+I know there are texts you don't want to be made public, me too. Because of
+that, *Make TXT Site* provide this feature.
+
+I will explain how to use hidden posts feature in *Make TXT Site*.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Hidden Posts Feature
+- 0x03 Signature
+
+---[[ 0x02 Hidden Posts Feature ]]----------------------------------------------
+
+First of all you must have configured some variables in `Makefile`, as discussed
+in `/0x00-starting.txt`, they are:
+
+- `HIDDEN_INDEX`
+- `HIDDEN_PATTERN`
+
+These variables are used to create the hidden posts lists and exclude hidden
+posts from normal public index.
+
+For example if you `HIDDEN_PATTERN` is `priv_` so create posts following that
+pattern in posts directory and they will be treated as hidden posts:
+
+- public/priv_example.txt
+- public/priv_secret.txt
+
+These posts will not be listed in normal public index but in hidden index as
+well.
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQ1QFFUcB0UG1y4tRpr86qUlA9zeWU5U6OTINyFIcJqhcvfuduHeuLd77r7j
+OL0GNR0lJhE/8GP8QCzToSaVECtBQkMniQoU8Wsy0CwbjNFSIcXeu72Tk3GaGt/e
+vnn7//z9f///3q7RDA4ICRxi35KRPKJ5XeCnwax5hBVxHC+ydknBig4X4JxPSjJB
+/zLSpZ4GCn0/r4FX+MCO6bd3qzvRu8kOVAc33YiAav3PRO3ut3soinrpwt0gnFiw
+RvcDMUsOrKpWM3kVQLXzj2JUL6PWbdQaVUyqmLq5VYi+KEajaq1iZx4q6l+X2QWS
+kMAd3akgCbx59EsRSfJ/9bVibFdi9Po8EgASf10ewgI065Ckt8EFPEuaxCoI8wzD
+suzcuWBSwaRJIEXEsgTmz2cfZzFMClggSk6ArbzMA0huzBdgBbgkB+AkMRwDJxQx
+wBIw88AGOR7YHWYBWbTARkwlSQdieQt0KDyQchlshVgLItMIZmCYYwBZBHMksMtS
+PiKO2IoUkMtD7JB5HU3sRIIA+AK7AJEIrBSEBGgkdUCBZ0B9DoCYDAis86PjJWCQ
+4h6XDEoH60eu+uAJrR5fBskqtAwPtEQVmqqbTEDliaqgH9ejPf43UIZJRLKCCccA
+Es5oc2wO8myF+TywSGIuyiNhOaBIpCv5UEbQLPAK5cxEOctFAm/SAqgADikWh6Lw
+HEN1elorq2AoYyTm0f8CYkUmwUUHIYaSYUpOiY9PSDempMcnzDH5CTKmGwwJmekm
+hjFYecU/KZ0h0kWOdtMik4Jp5wc0VUB0hyJH2m8RHJxPzXh7Lks2IEqyDQrecSOl
+cHwB6XiiJBMfaLMLZCRyPUwMhATImJnsMso3mgghPgzeyJIgSE5SLKCzytghxrws
+UqJUPYdk3oIl2eUB56HCM6Vk+LEnDkdZ9K/FQ5MKUu9J6kVH2RygUXiCBXsUXtbU
+pJ4MooRpFsoMSUIAPaJ+YHZgqvLmV2VQYZy8IPi/DX6z+DjvBMMUDZocFBAYEjA2
+7PmgtzbMHLZ8N5yVdr4uxPdBGTKIfjwCmKEjfBJHxPC+N1bENp6cu7966O0ITXr1
+mNDMht6z6Ejg520fNldF9Kxpar5Z3JTmHNrxzIH0Ft2NhZcud048ujr6wk8JtUiz
+pL1aLvlDE9y2Z1jPpfFDxq7TbOLK37vc67hzNjp8W8c9ObvswItRM/4qmtJyUXdo
+3+H6E43IecKlj/0+qTNttHFl98ejz4zqHrYqpyp0Q2V23I/MhL6DmYvL5uwKqQxr
+FXqW1h3cc0WbPOFGrXbk8j8rqmbUT1z5zYV5Z10iWNSxZefiyvhwIaXkN+S+Wg+f
+jDu06cp6ucJe/W5L6Jpoa/bVcZ2lEyv4dbNFlxKZ6ZpQf2Hq5uIPcNC5puMlxbVL
+lPZltfVo26rW3pbGp74DOwYPD6tLrc65O3src/9+Vk3bz8VfzTylGVcTtbD9tQ4t
+88PpLOVee9dncQ1tU0IiG08Vdmccu64PL2kt6zs28qOuqLWZzznjbeU1G2/VHYht
+KhtVWL7UfnPt5aRA2/3954+M69Eenlb6Tu+z1yudWbFJ1/Y1TIaaHnCjNPF0VVrY
+gvXlKeeuTYkQdrz/9Ky/pyY0rOwrzHsickzV7uvNr5v3zn/bVlj0+4rVpa+eq/u6
+K7l17HkYnBAZOju3ImP89mV7WtYuj0m9u3XDQkPqmV13crSHswKD7Yu+Hb19Wdcu
+V/fMmNvzTvyy9+Lxzi82r7pVv3T6C9Fi6vGNpSfXB0W9kjrtUMev/wA=
+=pK3q
+-----END PGP MESSAGE-----

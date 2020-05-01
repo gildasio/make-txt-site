@@ -1,0 +1,78 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+Explain about Atom Feed in *Make TXT Site* feature.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Atom feature
+- 0x03 Validation
+- 0x04 Signature
+
+---[[ 0x02 Atom Feature ]]------------------------------------------------------
+
+There is a default template in `template` directory which is a template to form
+`entry` element in an Atom Feed scheme.
+
+Running `make feed` *Make TXT Site* will create two files:
+
+- atom.xml
+- priv_atom.xml
+
+The difference between then is that priv_atom.xml includes hidden posts as well.
+
+By default *Make TXT Site* create the atom feed file with the last 5 files
+updated. If you want to change that you have to modify the number in `tail`
+command at `FEED_POSTS` and `HIDDEN_FEED_POSTS` variables pipelines in Makefile.
+
+---[[ 0x03 Validation ]]--------------------------------------------------------
+
+*Make TXT Site* feature follow RFC 4287, Atom format specification. You can
+validate it here:
+
+- https://validator.w3.org/feed/
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQtQFGUcRxLj1ggsNV/YZ+WbuwMPRlMiQQ44Q1DucFTEu73d72533Me1u3cH
+eSHjIxHzBYiPzEeogIrilCilgpn0cCbR0ZyGzESanDkFc1Ans+zbWw5Om5omvr35
+5r//5+//ut0Q9kxQaJ8Qx7bZaRHflvap6We1huISz2qkPGnRweIK0HPM8lGop5n+
+X5dCF7NbD+vR9yg3knvQDRQDj3whhiwNpJHY06P3hBfl0Yz1gLFIQ232dLPViFAr
+YiVSlwAoeoFezMpjjvKYo8wKJoUtm3kUiH4vZrOirWDHnkjqX481H6TSDHlmt0jz
+YOaZTzmaF/6rLSVJDnGqVmtHDnBkr7HTEoNbNTSvZfHFUI2apBZpCWKYWq3OyQHR
+edHRwMBJAg9yc9W9ORimz3MwOM0B3Mo7JZCIZgKkQEgCxJowCwUHpnkmYETBJwAb
+xCWnADUBMGKAiZ/RWxAyDHVAUsqLz7VCTlJwdcVXeDowF2doEpdonlM4sQimnVNU
+ehBO8ufkE/xvqBhmoiCyp0WAAxLacCcjAQmyqHgSlItl8b9YAEkLkJB4IR+4KZqg
+FJtuXYkHNl5gMQtEueZbAGQgi0jZB84FNEAkKCRAxc5ychzN2YFFngVUBEha/tYa
+N80wgBCgL4AbRaAZKE6Vy+rb8jyWQaRDoF3m7nc5IQTVZkNpcQQEVii5IeSARKEL
+QZYoXHrSBEEkGCcJRUDRJIm0HLwoodxE4IYMg5Am5XeX5mmAfmwoJq70EqUoo0TQ
+JcrHZ3BRAnEKdMzpQK2FpAYYbCCfdwI3jkqESkdQOGeHCjiZT+EuX0lZHqWS7/PD
+OVkrFJSe4DRjwQieZXGORIGBJUWvTzbPzjSajBYg8yxphuRkfYY5kO/CBRq3IhTA
+QTsgQ3OIQt7kjGRwgfMfOIW9WAMM+4ddQ6PCMLwbZKXMALGTpkyO6toENEAoG9EB
+CdpGE77wGjAf1YPAOcylQEJjKQF5aH1z4P+P6RLygsat0/CCXSt3QhuQUsAa9Wax
+MWx1sK5vUJ/QoMjBo/rO2ZTZf8U+PHtWy6lQ/1coJFj+8gRhqgg/J+9M+OPUibVh
+5h3Tr7QeUR3SDtuyIGZC7XcH9K0rdeUlrwwZ3RLdub7ucvz08YeaqbZlS5pvfNJ2
+lq02lE5pE3e7Nnx/rljT0nGhkrmyJmywacPas0NOR+WQ5QuuvspkH9+pLzsekp50
+r/TqyPqLX6mkrcnVC9OWTiOKXPdPJF0ace3FRaa6Yc/vyMwY0pE5VbOwveLe5ZDy
+0WrV8pwtX3Swnd7H70dnqoY25a6KrKsrbPw6vH+Glx86/1F844CLTUHnpsSOLJp/
+/t5HVR8W/RIXUUX/mrEsuMT5TdkWcczLL42v7/ebsZ9Bd2jcvF1xd3JvptxOub51
+aXnViVyQVPZw/cbntu/9KfNC5TsRuvZFVyq8lxI/nrMkw5j12fIVbwwKLbO1FPOt
+6wq+3Jx+pLHk9vraP485Dp/S67DrY4I9HfGGkrVtjXxWfeyDxP2dH9yNuzNiDfO6
+mDQ3u8HVcV9MLViVGDewgcgu9OYVPjs8jKqJT30cY181ubJ69cZp7fuqt5/cVnRw
+3M4mb/FZV+sKvXcvp61PjDxa8+7A5AEJm1ONx2YLr3nuvMdtmqkaZKvpn/DD0T03
+sWY1v39bw96YiY/2nH/7Tfa898YD4+pd5K3ohN/fOv2zavPdtMGV7pklkScawpcc
+Tu9MX268aTj8eWmV6vSMh+411bW3/ygAbS80Lx6+Y9TKaZfab12r6PjxQMK6gsIm
+28m/AA==
+=ZuGp
+-----END PGP MESSAGE-----

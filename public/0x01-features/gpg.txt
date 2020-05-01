@@ -1,0 +1,76 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+This topic explain how *Make TXT Site* use GPG improving user security.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Signing
+- 0x03 Verify
+- 0x04 Signature
+
+---[[ 0x02 Signing ]]-----------------------------------------------------------
+
+As *Make TXT Site* works with txt files it's to sign a post file.
+
+To use this feature you need to have a key configured in your keyring GPG file.
+
+After create and edit your post you can run `make sign <filename>`.
+
+This command will generate a sign to that file and append it to the same file.
+This way it's a standalone file and its signature.
+
+> You can sign index.txt files as well.
+
+---[[ 0x03 Verify ]]------------------------------------------------------------
+
+After signing a post/file your users can verify that file to improve integrity.
+
+To do so, there is a simple command:
+
+```
+curl $POST_URL | gpg --verify
+```
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQ1QFFUcP5CPc9GwzIto1KcRkN4eCOgUpAI6g594yhmGA8dy9+7uxbF77i4e
+Nx2l6IyIgiipYJphRDXyMaBTagMlDkVGFIWKoqNlZebIKEQwftHbfQd31kzTDG9v
+9t7+P37/3/v939stnThOofTytR3QLpnUUeZV6+ed5W+2mTVinphRs/MOcA+9NMjs
+n8aRnyvAZRyNo9zxTnLHfie+A5LglG7YIHk959jtdMc9hkIuTZgThOEIWu8cNdN4
+QhM3qeRyABLniaInl17t1Kv1hBMxS2lOQnEERa8n0YQ79dii/nNkOUASshrPVAqI
+A8vOnGIRx//fXIso2oTYiAgzBmBwvsaMRCuTpUFcRA6TDWncJFpAIqQomqbXrweR
+eZGRYCkr8hxIT6fHMihKZ0ECEDkbMgCYZ7MyiAUWzg5mrcSFgW6dDqTgwrNArgBB
+kjYJoBwbz21ErFmy8ECAhlweiQ6NB7U5QMctGisxiRrtsVDyIEOTaRQmZmYxEfIY
+DV6FPDI5yFOM7GTEXN5Ts9GUsZGjqAThX/rYOT5bAHYkWgDuFjAhKxQAEsMkbYGA
+ywIG2DiBeLBaOk6WVJTUN0GZKXBwuYCF0CilWJiNEKdkQwcwcKwJmXGAEeDm4CBe
+MvPSOqSOuAATTCLuh4HHWDiRNQJoRCKJlutK4AaGBXwuCzKlXUVYvSKls0wOXJCp
+cW0GA5eTIwHYkdUKzJCFvAxJ4jE10cKQZchlGJsN4j9cS3ZhWAzmIiXD2RkHEQIj
+iDiDsXIsdOcjUZCRZQkwhQXgNRdTuR5ijTBP45aUwYDQavXcbyOtH+OWG5FQcO0R
+0q8Imagso7ThBZnZRlLPLQReOjkYEBMWodl1JHCTjbj7nFoSBjcYySLgSJziUjmW
+ojIzMyl8iqwgRLsqRadfu2YFfo3hdzOgaVJIjnCv12Nzj2XJFLXdO9pH4aVUTFXN
+8Fm9d1XA1mpm7cqeZuXIV8LXW/o0KKjxk0Ys0y2B930m+tZPK9o1eNfObT5U/7Mw
+zXuhI628qoQ3LTI2wjpBTaPY+2ftrQOJj65V1uxZcVFwtFckxhcObt7dzXeVPbvh
+w4TWc2VN6q7Owmv+TU82D58eXJIAbujKX8x/L+DUTBWVHNpcmzzOOOX7RM2b3+zZ
+UHcraH/wGa/DRVOe9x2ekz60bvztRftrbyzrX6F4kDLI+08wgYMNNwviDWknci+A
+N5bXLN1y5GwiimVsk+/92LGj/d3o1PAdX2r7frj9evJzp4N21ncNtSxX3LF/3Vul
+7A5+SbX7QV19X9/12xWx5w8+PBfkF9TjjL80N7wUNV6I5xVHKncW/tRQfb6jsqI8
+fO1RwW99/760eWB1w6SBXdTchk2B/b92aCd/AT5um/pyZ9i24IA0reXqcbj1WLSt
+u+CD6Nm9h2Miyyd7b0v7ZHbR28Jvv6RPOJ2n+urAkm8vZcfs0SU/CtPFBed3zp/3
+R3WxttPS5vz8M2sbl9G++UDL5ZQXNDOOrHliuOlKaFdJ6vbAUNXChqiiWtWVuHym
+pJhNj5pnrPtIe+Wp745fLFe/Vba3Mj5Z/H3B3dZ3lE1c8a3pIc1+vsN9QclwZkhP
+VEBpY8Hqli3+D2+FLG672ptaFXd5ABgLhrQnVEfTNj3krwdrmljbhYFjtdfN1p6W
+kEP7uv96xsIVa8VPbwK98v2+1HsVf+57OmP+yZN/Aw==
+=qW1X
+-----END PGP MESSAGE-----
