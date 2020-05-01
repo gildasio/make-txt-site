@@ -1,12 +1,12 @@
 .
+├── 0x02-tips
+│   ├── gitlab-pages.txt
+│   └── vim.txt
+├── priv_atom.xml
+├── atom.xml
 ├── 0x01-features
 │   ├── hidden-posts.txt
 │   ├── gpg.txt
 │   └── atom.txt
 ├── priv_example.txt
-├── priv_atom.xml
-├── atom.xml
-├── 0x02-tips
-│   ├── vim.txt
-│   └── gitlab-pages.txt
 └── 0x00-starting.txt

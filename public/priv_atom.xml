@@ -3,7 +3,7 @@
   <title>Make TXT Site</title>
   <link href="https://gildasio.gitlab.io/make-txt-site/priv_atom.xml" rel="self" />
   <link href="https://gildasio.gitlab.io/make-txt-site/"/>
-  <updated>2020-05-01T18:24:31Z</updated>
+  <updated>2020-05-01T18:28:58Z</updated>
   <id>https://gildasio.gitlab.io/make-txt-site/</id>
   <author>
     <name>gildasio</name>
@@ -187,86 +187,6 @@ eTz3rt9ti/f8eMn+yzc+eUg99M+dvW/3XH5569HhA11zQ+s7nvv6m5fOPhM7U3Ru
 R9Hm+EtPFA6cvrT/6aKT26Yu6/i3Nu5kA3/vuQ8vLN3SUfm9Gweez143/kDWYzo7
 eKX2o+NvlL9z8YnoLYOrfn75vqzj9IXv3/Ff
 =qYXS
------END PGP MESSAGE-----</content>
-</entry>
-<entry>
-  <title>0x02-tips/gitlab-pages.txt</title>
-  <link href="https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt" />
-  <updated>2020-05-01T18:11:54Z</updated>
-  <id>https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt</id>
-  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
-          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
-          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
-          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
-  
-                                       by Gildásio Júnior
-                                       https://gildasio.gitlab.io/make-txt-site
-
----[[ 0x00 Intro ]]-------------------------------------------------------------
-
-Sites made by *Make TXT Site* are simple to be hosted. Gitlab pages is a great
-way to do that.
-
----[[ 0x01 ToC ]]---------------------------------------------------------------
-
-- 0x00 Intro
-- 0x01 ToC
-- 0x02 Gitlab Pages
-- 0x03 Signature
-
----[[ 0x02 Gitlab Pages ]]------------------------------------------------------
-
-All you need is to create a `.gitlab-ci.yml` file in root directory. A example
-content to this file:
-
-```
-image: alpine:latest
-
-pages:
-  stage: deploy
-  script:
-  - echo 'Nothing to do...'
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
-```
-
-Maybe you have to change somethings in these file, for example `public` and 
-`master` to correspond your posts directory and branch but it isn't likely.
-
----[[ 0x03 Signature ]]---------------------------------------------------------
-
------BEGIN PGP MESSAGE-----
-
-owGlVHtMFEcY54ArsJYKwYBSISMarpDbOx5K7FkJiFWxBZRSS0S927sb7hb2di+7
-g+X0DKIVxUeDbaGFoIFSMLFK1FpRWnm2IA9La1BroTaigdhUCYq0Ba2dvQU5+kfT
-1NnN5Jvv8Zvf98gUebu5eMrk1rJ1a3y++1B2Ur5U72OiEUPpSStlgoIK5aItJ4rK
-wPTSikuS/qmc+icdJpXP/Ihpf7u0Y7sd70AKsIsbVohWZxmb7dN+M1CkT6WwAwX2
-ILX2Z2oSC6Rklm6aNADJzxlFK31apV2r1EqcJLUYZpcoTqFotZK3xJ2YkdS/Lr0N
-rKYZY2ulQHNgbWs9S3P8f401I2QVNGq1CQNQOF4ltUhFc2oLlQ1J3CRSoBEkCJIk
-MzJARG5EBEhkEc+BzZvJ51kE8RbGFYCFMkIxhfAkfB9IS08Doj4cUDwEAm2xMhAg
-DughMHMCgkYVzlVkCBxDBGgBUMDEQwoR71I20dPIAWSmkMqJcSRI4xKel6/ImHTK
-Xzo4oCUxaorZOpGZpIvGyZhYCuXwzhWc6fm/iRFEPMMAG5cDWAiNYilw+gaxFhAX
-RTfZStJAq2wWRgcyaVxKmgU8xyFgpHloQBxvU4F4AHMpsc6EgWMRZJEIg8wYTozQ
-EIROpyNoC6aqARRjpVmoYfAVAiIIRw80eNYE5DAboZXhbOLZwNNWJFpIAA1mDiiS
-OQzJmqQOqVQqBbZRPKIzKQNyQADcUWSeFElgzdEztAEfOJaxSUAWCg8A76BDJFE2
-PBJi7mZqq2NCDGaKNeGR4SzQcZMg5orMUICOPJQgk+OnMgU6CV4HKNYICJ2ErHPA
-cDwPBSuH9RidB1Y8dcJ0uRwBep5iDWagz0GAxr/AKhBg6GzI2Jynzqn3zzN7BFHo
-Gu3uIvN0CfJf4L6+OGXWezXU20l9DZ5Tb6vcVXxHXQgvnylN4/HZE/JIt7YVce8L
-b9xde2tt3uy5T85uPBTccjrI/ldG/Z4RdUdU1BxbGLNhj17n3rugrfx2ycfbs1xn
-ff/bmZMx1P0TsmNwPGakTdnzybbBpQNL3LPPptSH3AzyG2v8s6D/3v2mH3LKs1oT
-5iXd8Ove0th+70aubDSio+vK8JyAuKu9EYtD6iaGFirPh6W6cUmPDYe6TQe+TiuJ
-Lm5u6v4sMH/h2CpP+/ami83eeXUP4t1Tv+zzi03xON/2UsD8+sGyeK9e/4kvgi76
-jrru31t9OXF3mH9tmtba6Xdh+zfKZWPq0s7Lc5cXvWoYGNF+dC1m/EHXoqS6Lr9d
-RQ93lSoVlZpz8ivC+krzCwFM1eelazwvvb6c3XehOjz9VPnP/TK/0JtZx2sCYnue
-zl8CFynDL/ncaTsQsuF6QYViKHtb4pwhzo0MiHy0slOQL/cdH9tRnlV0PbAqeKKy
-I6r59NPOjuFvg8H4T7Jf/Y/F3Lm10qPyx/Tjj3p9j+7fcTi0IlTV8ctrZSFn956S
-aZfFLqlv3NpTWLJi1LPdmhyaWrWz4nDiUODuxoNfpTxueRK3sep28eOozsZDJ30a
-5Pkve0SGLK49V/Np7ZEEpuGVdu+hDzS22KiBecbkhNi7R+TRm65U5m/ad3DgTN/V
-wtD5/XUtXqNp1wq81av/eOf36p3DGdrm1DcDHsaqI/OUTaUuE6sGzS8e/Rs=
-=tFng
 -----END PGP MESSAGE-----</content>
 </entry>
 <entry>
@@ -499,6 +419,91 @@ qzJrLw6sOVa0d9qzr7Zv/1bD51e4B5z/qnVP4jVj0ph5bzXcLpyy+OMN23bcNyWd
 vXuwOSHjj2WJ+SlTqUtlB+Zv3PL7iu/WLNb98xvxxah1F39a+H5k+prcqKZdQ2o0
 CzbGzyqp9cb9Cw==
 =q47K
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x02-tips/gitlab-pages.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt" />
+  <updated>2020-05-01T18:28:53Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+Sites made by *Make TXT Site* are simple to be hosted. Gitlab pages is a great
+way to do that.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Gitlab Pages
+- 0x03 Signature
+
+---[[ 0x02 Gitlab Pages ]]------------------------------------------------------
+
+All you need is to create a `.gitlab-ci.yml` file in root directory. A example
+content to this file:
+
+```
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```
+
+Maybe you have to change somethings in these file, for example `public` and 
+`master` to correspond your posts directory and branch but it isn't likely.
+
+> If your repository is private perhaps you want the pages be public accessible
+> anyway. Go to 'Settings > General > Visibility > Pages' and set to 'Everyone'.
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVHtQFVUYB4W8rAk42dUy8mjoKrLLywhvis8CtAso4AMH7j137+Huxt7dbfeA
+bt1Gm/FtjprPdHwQDP9ovkpFKUrBxzTjgxGZwhx1SlIsswaVGaI6uwty7Y+mybM7
+Z77zPX7n9z121w/oG2ILDVe252ZGX9gY+ml4iyfaJ2ARehgF+pDG4kW4eN+mzaB3
+uYxlSf9U9rzdDt3Kx35Ur3/A2ok9QHZgBQSMjSgMa7BMzIFevydQrIelA4AmHowr
+8FjNEIGxzNZN3QZg+QWjuKzHFR9wxbssTpbaCAtYFHtQXC7L2+JOPZHUvy6PDjIE
+0VtfoQkymFF/QhJk9b/G8hgrmiMhwUcAIIlnrRaxgpzgh6WIIU1iNAEjimIYZsEC
+kLgoMRFkSViVQVER8zSLovIIrgb80IuMFOKc5D6QPy8fGPo4AFUENMGviAhgGXgQ
+4GUNIy9LcjUYAnOIgKABCHwqgphaCHXD0ysDzEPMBjFOAvnytKflazBmgvK3Dia0
+JSb3MMs1mFm6FJKMT4K4TA2u4JOe/5sYRU0RRaDLZUBCyGuUgqTPGbVApCju7lYy
+nMDqftENSgRSSkECqixj4BVUxGFZ1VkwBaBF0KgzxckSRhI2YDBP4IwIB0W53W5K
+8BOqDgBFRZCQQyRXaJiizB44yKxp2DR7kSLKunHmVEHBhoUBiONlQGfLBFLyWR1i
+WZYmNqhioQRy2IQApKOY7xYZoJR5RIEjB1kSdQvID8kAqCYdygl1MhJG7jwsNyeE
+46HkIyMj+5F5k2bkinmkITOPeFAiqz2ZArcF7wZQ8gLKbSG7TRhZVZGmyERP0FWg
+kKnTestlBnhUKHE88JRhIJBXk2gMRKEUiTqZunSQVWKFqogEC2YUKaaiCuVGZxSk
+8lDRTO4LoVFtHnUPM8nI4gUgxyFNEzykKenkSp3MNhl82SBI5yGMzfzSQQaSkApF
+Is0RiLcgClgnB3OsaJOqhsx20m+UI1WXJUQHfxdB0/k0XwdFreqTEhYSaguJsQ8P
+m7U5p//SaljgvFpn6/n7h/cx/vQhVER0jyaiIqorZsLsm2mbWmsLd86q3Xs++yd7
+4Yo8qlOumNFBf6M37nkwt23I92NW3hbo0jvzI6c3XF3xqHNg7dl8+70Dzz9TNeXd
+8g19928aMgbvfG/C/akXfkjZduXOOjQ67cEfs8JTbTmxZR9dbOvz5t6oK5PE6TMX
+O/Z2zCi5WBXROFJZ/Y77wslzp8f5Hg4/XJA6zOHfsoPtFOsqW9IytZSytevH3n6x
+X8eZ6w9XvjCi3w7b/UG+bz/OnPMwOSlsc3FL3Ny3WkYdpofHnYoL5FwbSo9+u58+
+Z83porv1B3Prd1B3Xi1oZLxq47AjDYeW+F4+vh7DH4uSqo9mCG07p+2JuiUdqHEV
+FnMNsStczf55Gpp8eVlT4uKXdk0GI45Vt3dWDPRPbO48zrYdbYpKrOg6Mzti7IaD
+A7N22ydVpH59duYXvw5ZdpOv2fLdeHpkxoaEzKzsi2kf5BaHnIvMy47Mac/TqmxL
+bF2VUvNzEy+91l7a/2TsxkHg0VbXWVd+6wj28K2Inz+7PerP6Katmdel+UnjMgIf
+HqodV70rcvnEe5e382LrlsrQdb9FHfh9lz0me2jBqmdzKm8UMu11f6U57yYPjUhv
+iC/c7XjlSM0AZ2rVeda5Znnol7EZ92r2O7qU85P3DT7oHN+UvHqBXQm7dmzbJ4N/
+aT11aeX42uRLmUVge1XdMXtM4vtTO1bf+Hxt0+yvTpzubH79wd8=
+=vPIn
 -----END PGP MESSAGE-----</content>
 </entry>
 </feed>
