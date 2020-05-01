@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Make TXT Site</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/atom.xml" rel="self" />
+  <link href="https://gildasio.gitlab.io/make-txt-site/"/>
+  <updated>2020-05-01T18:16:42Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/</id>
+  <author>
+    <name>gildasio</name>
+  </author>
+<entry>
+  <title>0x01-features/gpg.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x01-features/gpg.txt" />
+  <updated>2020-05-01T17:56:16Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x01-features/gpg.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+This topic explain how *Make TXT Site* use GPG improving user security.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Signing
+- 0x03 Verify
+- 0x04 Signature
+
+---[[ 0x02 Signing ]]-----------------------------------------------------------
+
+As *Make TXT Site* works with txt files it's to sign a post file.
+
+To use this feature you need to have a key configured in your keyring GPG file.
+
+After create and edit your post you can run `make sign <filename>`.
+
+This command will generate a sign to that file and append it to the same file.
+This way it's a standalone file and its signature.
+
+> You can sign index.txt files as well.
+
+---[[ 0x03 Verify ]]------------------------------------------------------------
+
+After signing a post/file your users can verify that file to improve integrity.
+
+To do so, there is a simple command:
+
+```
+curl $POST_URL | gpg --verify
+```
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQ1QFFUcP5CPc9GwzIto1KcRkN4eCOgUpAI6g594yhmGA8dy9+7uxbF77i4e
+Nx2l6IyIgiipYJphRDXyMaBTagMlDkVGFIWKoqNlZebIKEQwftHbfQd31kzTDG9v
+9t7+P37/3/v939stnThOofTytR3QLpnUUeZV6+ed5W+2mTVinphRs/MOcA+9NMjs
+n8aRnyvAZRyNo9zxTnLHfie+A5LglG7YIHk959jtdMc9hkIuTZgThOEIWu8cNdN4
+QhM3qeRyABLniaInl17t1Kv1hBMxS2lOQnEERa8n0YQ79dii/nNkOUASshrPVAqI
+A8vOnGIRx//fXIso2oTYiAgzBmBwvsaMRCuTpUFcRA6TDWncJFpAIqQomqbXrweR
+eZGRYCkr8hxIT6fHMihKZ0ECEDkbMgCYZ7MyiAUWzg5mrcSFgW6dDqTgwrNArgBB
+kjYJoBwbz21ErFmy8ECAhlweiQ6NB7U5QMctGisxiRrtsVDyIEOTaRQmZmYxEfIY
+DV6FPDI5yFOM7GTEXN5Ts9GUsZGjqAThX/rYOT5bAHYkWgDuFjAhKxQAEsMkbYGA
+ywIG2DiBeLBaOk6WVJTUN0GZKXBwuYCF0CilWJiNEKdkQwcwcKwJmXGAEeDm4CBe
+MvPSOqSOuAATTCLuh4HHWDiRNQJoRCKJlutK4AaGBXwuCzKlXUVYvSKls0wOXJCp
+cW0GA5eTIwHYkdUKzJCFvAxJ4jE10cKQZchlGJsN4j9cS3ZhWAzmIiXD2RkHEQIj
+iDiDsXIsdOcjUZCRZQkwhQXgNRdTuR5ijTBP45aUwYDQavXcbyOtH+OWG5FQcO0R
+0q8Imagso7ThBZnZRlLPLQReOjkYEBMWodl1JHCTjbj7nFoSBjcYySLgSJziUjmW
+ojIzMyl8iqwgRLsqRadfu2YFfo3hdzOgaVJIjnCv12Nzj2XJFLXdO9pH4aVUTFXN
+8Fm9d1XA1mpm7cqeZuXIV8LXW/o0KKjxk0Ys0y2B930m+tZPK9o1eNfObT5U/7Mw
+zXuhI628qoQ3LTI2wjpBTaPY+2ftrQOJj65V1uxZcVFwtFckxhcObt7dzXeVPbvh
+w4TWc2VN6q7Owmv+TU82D58eXJIAbujKX8x/L+DUTBWVHNpcmzzOOOX7RM2b3+zZ
+UHcraH/wGa/DRVOe9x2ekz60bvztRftrbyzrX6F4kDLI+08wgYMNNwviDWknci+A
+N5bXLN1y5GwiimVsk+/92LGj/d3o1PAdX2r7frj9evJzp4N21ncNtSxX3LF/3Vul
+7A5+SbX7QV19X9/12xWx5w8+PBfkF9TjjL80N7wUNV6I5xVHKncW/tRQfb6jsqI8
+fO1RwW99/760eWB1w6SBXdTchk2B/b92aCd/AT5um/pyZ9i24IA0reXqcbj1WLSt
+u+CD6Nm9h2Miyyd7b0v7ZHbR28Jvv6RPOJ2n+urAkm8vZcfs0SU/CtPFBed3zp/3
+R3WxttPS5vz8M2sbl9G++UDL5ZQXNDOOrHliuOlKaFdJ6vbAUNXChqiiWtWVuHym
+pJhNj5pnrPtIe+Wp745fLFe/Vba3Mj5Z/H3B3dZ3lE1c8a3pIc1+vsN9QclwZkhP
+VEBpY8Hqli3+D2+FLG672ptaFXd5ABgLhrQnVEfTNj3krwdrmljbhYFjtdfN1p6W
+kEP7uv96xsIVa8VPbwK98v2+1HsVf+57OmP+yZN/Aw==
+=qW1X
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x00-starting.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x00-starting.txt" />
+  <updated>2020-05-01T18:03:36Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x00-starting.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+Let's talk about starting using *Make TXT Site*.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Dependencies
+- 0x03 Bootstrap
+  - 0x03.00 Download
+  - 0x03.01 Configure
+- 0x04 Templates
+  - 0x04.00 Files
+  - 0x04.01 Variables
+- 0x05 Posts
+- 0x05 Signature
+
+---[[ 0x02 Dependencies ]]------------------------------------------------------
+
+*Make TXT Site* only use simple and common tools in a GNU/*nix environment.
+
+Here is a comprehensive list of tools used:
+
+- bash
+- cat
+- cut
+- date
+- find
+- gpg
+- grep
+- head
+- make
+- make
+- sed
+- sort
+- tail
+- tree
+
+---[[ 0x03 Bootstrap ]]---------------------------------------------------------
+
+You need to get the project locally and change some variables content to get
+start.
+
+------[[ 0x03.00 Download ]]----------------------------------------------------
+
+You can use git:
+
+```
+git clone https://github.com/gildasio/make-txt-site
+```
+
+Or download a zip file:
+
+```
+wget https://github.com/gildasio/make-txt-site/archive/master.zip
+```
+
+------[[ 0x03.01 Configure Variables ]]-----------------------------------------
+
+Edit `Makefile` change init variables values.
+
+Variables for general purpose:
+
+- `PREFIX`: Directory where txt content files are in. `public` for example to
+  use in Gitlab Pages more easily
+- `PUBLIC_INDEX`: Name file (without extension) of public index page. It will be
+  used to generate `PUBLIC_INDEX.txt` and `PUBLIC_INDEX.html` files
+- `HIDDEN_INDEX`: Name file (without extension) of hidden index page. It will be
+  used to generate `HIDDEN_INDEX.txt` and `HIDDEN_INDEX.html` files
+- `HIDDEN_PATTERN`: Some pattern to *Make TXT Site* identify if a file is a
+  public post or a hidden one
+
+Variables to use only in Atom feed:
+
+- `URL`: URL of your site. Remember to escape / using \
+- `AUTHOR`: Your name my fellow
+- `SITE`: Site name
+
+---[[ 0x04 Templates ]]---------------------------------------------------------
+
+After configure init variables you have to configure some templates that is in
+`template` directory.
+
+------[[ 0x04.00 Files ]]-------------------------------------------------------
+
+- `post.txt`: Template used by `make post <filename>` as a post skel
+
+- `index.txt` and `index.html`: Have to match with `PUBLIC_INDEX` variable in
+  `Makefile`. If you change there you have to change here too.
+
+- `priv.txt` and `priv.html`: Have to match with `HIDDEN_INDEX` variable in
+  `Makefile`. If you change there you have to change here too.
+
+------[[ 0x04.01 Variables ]]---------------------------------------------------
+
+In `post.txt` template you can put `{{date}}` anywhere in content and when run
+`make post <filename>` it will be replaced by today date.
+
+In indexes templates you have to put `{{content}}` somewhere to be replaced by a
+file lists, as a `tree` output.
+
+---[[ 0x05 Posts ]]-------------------------------------------------------------
+
+After configure your project (variables and templates) you are ok to go and
+create posts.
+
+You can run `make post <filename>` and a filename named <filename> will be
+created in `PREFIX` (defualt: `public`) directory as an instance of `post.txt`
+template and will open it in your `$EDITOR`.
+
+Otherwise you can simple create a txt file inside `PREFIX` directory and edit
+it as well.
+
+After that, run `make all` to create all files.
+
+---[[ 0x06 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGtVw1wVNUVTvhJ4VGKilBG0LlVCZBmNwmBiKHSSUhMUkMSkw0/0rDv7r6b3Qdv
+39157+4mkcSUqdLWWirFTG10GknHP0TRMsDEMpaWjtBonKkRpkOqRQpxyk9FpBUp
+NT3nvbe7LzvWQdJN5r6359577nfP+c537z46dXzGpMyJ0e66yuve2pb54jQeuD6/
+NT/fYwpqCFUPeUWrWLdzy7Mk9fHjx35LNyb+nQGOMTlOSo1vt1vob4eW2BPasQED
+9rrfobs9NW6UF/vPO6+dzIMRHn970uyBF4/dba/kdBB7nNuL3/7z57b7c/02JtuM
+09ptiAkvfr892sYujdrUF34CbaRC1ZSD202Vk+8cfFVXuXG1c8NCRM3ivLwQOKAw
+3xtShUYDXpXnRegG5oEkeUxVMEnyeDxr1xJMIanShcFJU5NnLB9JqmZinkkE1TYQ
+GuAxQRLUIDET25wVgID4VvtIAyDI8bowFBAfXz5WBIjB49qR/cVybb8uJGUsynSF
+6UGVmbatkJRyLkxh0CjE2DZ5wUMZb9E1ThWXsYAs53qzGooZzJ67iPhYJKpRAc6c
+YYtw7t2qNspSQFZSQ6UBLbHoYlLHTZH80qCGdCrQbSoio7Fec2gkKS3qhOtaGySE
+EVMF7IxQXSFBHolwnQjONZOoOqGkoqYxL0dXWwnT46rB9QjTBSSskhmMqCYMgClR
+g4WZbqpxRjTVFIQ3Ox7Au1KMuQhQMwyPIBXYxrBVIFrwaFZ1BR6haAhbg0XhEWYU
+bcjT1ANcYcsNnCyoquHDYO5QuVI4FgpJ0hoeIzpjCmyDhJggIsxI1ODrWVAQjQep
+BpGzwhWmeggCyCOMxBOZhYjoAqLkTJYs8tscTyF1M+sasdowg1S3kgjlDZGWZVmC
+NxLUuM5cGiDCsYAXMpWUgzQRwHlSrUGUBCRK7lejkByNOV5bMA5X7TCPGsEw8AGs
+pmCGF5zZa6QFwVVJqdL4MvGQpHIF9isjtxGtnMiJqoM5lZM41WLMhCykVmnmBuRH
+ZwbVSDRmRLnJLK7KdfXld1etlotJmWpAxrnRRlrCyHfYXTK5uBjQH6tA9xI5Ggto
+alC2nLJWahWU4FD6mBsopApLfUkdDcGsCIdpDKKmtVnrNZZWVy33V9WUleOqNRTY
+hO7J/BaIM+onaxVYX1xfgLVlrwVeFdZKouDRS6oEaVE1jQSYvaTDXNycYKNXwONZ
+ttg72hwWEU22t4WgKqvKysprrh5UWFVAor4MKPcKLlCjzJ8Pqq7E5yuvrwFYDVh5
+USqAY6ha6ScLUQGTUJvbiNoMlLbwo2gBHieIkHXQKwM6nQ1A3bhJAj4xg5ZWQhpL
+BI+QZuaomtxYXw0goMUItPGYQZD8XlLPIiwSYAZOZ2aQRhnJc86+7+K8kkZfZW09
+TF2Dc3SMbaQN/Goab8H+hipfOe4OnFm9Lo1zHTVj07iSZgga0tkpv7SCgd2QMI0j
+i12DLKUTSQAiTAUGVNUlOWGViZIomzTRSx2J147cCjsmzWJMcTIYNr/gwiSjDtlp
+/RbmG8O3DKiFR5VlNTcwzfJiUdVFPPu7xbhiUulsPUJFMEyQ8ml1mgwVbp64BAh4
+b3EhIUTCko5R4bQ7bEnh3GvvyVDjLjDW1y/AMqo8/79YRmes4Np02Z2xKt2VsiR7
+bFxwekVBS+SNG/E+0NGB22+z1RbKLSG2GBIw6sSIAdM+P8NqUm0I3CI0GrT5ILhC
+26zLhtdCYmUZqZsksTscDhZnXYSDjHfUn6f7ppKlKHjnMXNtisl4JZEJ6CO4cl9s
+nZve2C/X6XVryU7icjI/VcAYs+QmF1i7xNOKb7BUmGO/FDQYZgJjiWdj4j4BUf6f
+daQrjpBaqoWN4hqQFHzbs4JJTJynZL7CmmNUE8XJ43JBSius8GF64LqkBxkKaoo0
+UpI0FhNwDR7F00bgAlYE5NvLy6p8IKqwj1rkeYtqpjjmXHGd/VLrJLdPAzjBFJbC
+6MIDKzG4W0iwCGBrAXH2JqKPupfrChNcCGWrmhz/gM86s9wEKErd7scm3D8aVzgh
+I3NSxs0zvzHh3q7aKQ8+QxtXDL02KfGTfOI4/PWdIU2+LmF5vXDaZ4uW9lcfi7z7
+/B2HXtne1Fcw8tnDmQvPE+mUL3RD3yd1BdMrS4YyiwZerN9ZPrtuXen+JTftmvBB
+3ycXc24I967rvj7ro8Vz3pnz1dMHdu9eta90bWH25N1Tf3Kx64G9Of2d57IPfxpc
+dOe+VR3T/7A3v3Lvf+b+48juCxPOdp5896bDP+v3Tfnj0RmfLp1Vs6yzb3vT/pcv
+eWObTtz21sC0+kjxkqFHvE9NuXCq51iw6fDw8e673ts3c86/frGpd0f+rEOFbx89
+tmNX3rMN56f7Lpx6ev3HXZ0jdVcWbz7j93Vtu+fmHz50peXO4HDurJeU5jWDH2Q9
+qp5pO3tqT8ZQ9oqRh4dlz+uF5+956vdb+3Ie793zU/b+32beGm9/5eOBI2Zxxxtr
+1cm7Vs67b8trRdVT/j7n1p23nD4zd4HW/WrX4JMzVp+47UT/7DUrj/y5Z/z42tn3
+E/bLkcmdpX8tzN46snzw3q98+4EXtp6rGGrix36VsXgjiRf73gx9+IOe327iRT37
+JhZv3/g+ndE7dbN/1aVBUVPy66yvZT62o+7InxY+suf2cL/Z/ZeK3zR90x8ffugk
+eTz3rt9ti/f8eMn+yzc+eUg99M+dvW/3XH5569HhA11zQ+s7nvv6m5fOPhM7U3Ru
+R9Hm+EtPFA6cvrT/6aKT26Yu6/i3Nu5kA3/vuQ8vLN3SUfm9Gweez143/kDWYzo7
+eKX2o+NvlL9z8YnoLYOrfn75vqzj9IXv3/Ff
+=qYXS
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x01-features/hidden-posts.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt" />
+  <updated>2020-05-01T18:06:26Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+I know there are texts you don't want to be made public, me too. Because of
+that, *Make TXT Site* provide this feature.
+
+I will explain how to use hidden posts feature in *Make TXT Site*.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Hidden Posts Feature
+- 0x03 Signature
+
+---[[ 0x02 Hidden Posts Feature ]]----------------------------------------------
+
+First of all you must have configured some variables in `Makefile`, as discussed
+in `/0x00-starting.txt`, they are:
+
+- `HIDDEN_INDEX`
+- `HIDDEN_PATTERN`
+
+These variables are used to create the hidden posts lists and exclude hidden
+posts from normal public index.
+
+For example if you `HIDDEN_PATTERN` is `priv_` so create posts following that
+pattern in posts directory and they will be treated as hidden posts:
+
+- public/priv_example.txt
+- public/priv_secret.txt
+
+These posts will not be listed in normal public index but in hidden index as
+well.
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQ1QFFUcB0UG1y4tRpr86qUlA9zeWU5U6OTINyFIcJqhcvfuduHeuLd77r7j
+OL0GNR0lJhE/8GP8QCzToSaVECtBQkMniQoU8Wsy0CwbjNFSIcXeu72Tk3GaGt/e
+vnn7//z9f///3q7RDA4ICRxi35KRPKJ5XeCnwax5hBVxHC+ydknBig4X4JxPSjJB
+/zLSpZ4GCn0/r4FX+MCO6bd3qzvRu8kOVAc33YiAav3PRO3ut3soinrpwt0gnFiw
+RvcDMUsOrKpWM3kVQLXzj2JUL6PWbdQaVUyqmLq5VYi+KEajaq1iZx4q6l+X2QWS
+kMAd3akgCbx59EsRSfJ/9bVibFdi9Po8EgASf10ewgI065Ckt8EFPEuaxCoI8wzD
+suzcuWBSwaRJIEXEsgTmz2cfZzFMClggSk6ArbzMA0huzBdgBbgkB+AkMRwDJxQx
+wBIw88AGOR7YHWYBWbTARkwlSQdieQt0KDyQchlshVgLItMIZmCYYwBZBHMksMtS
+PiKO2IoUkMtD7JB5HU3sRIIA+AK7AJEIrBSEBGgkdUCBZ0B9DoCYDAis86PjJWCQ
+4h6XDEoH60eu+uAJrR5fBskqtAwPtEQVmqqbTEDliaqgH9ejPf43UIZJRLKCCccA
+Es5oc2wO8myF+TywSGIuyiNhOaBIpCv5UEbQLPAK5cxEOctFAm/SAqgADikWh6Lw
+HEN1elorq2AoYyTm0f8CYkUmwUUHIYaSYUpOiY9PSDempMcnzDH5CTKmGwwJmekm
+hjFYecU/KZ0h0kWOdtMik4Jp5wc0VUB0hyJH2m8RHJxPzXh7Lks2IEqyDQrecSOl
+cHwB6XiiJBMfaLMLZCRyPUwMhATImJnsMso3mgghPgzeyJIgSE5SLKCzytghxrws
+UqJUPYdk3oIl2eUB56HCM6Vk+LEnDkdZ9K/FQ5MKUu9J6kVH2RygUXiCBXsUXtbU
+pJ4MooRpFsoMSUIAPaJ+YHZgqvLmV2VQYZy8IPi/DX6z+DjvBMMUDZocFBAYEjA2
+7PmgtzbMHLZ8N5yVdr4uxPdBGTKIfjwCmKEjfBJHxPC+N1bENp6cu7966O0ITXr1
+mNDMht6z6Ejg520fNldF9Kxpar5Z3JTmHNrxzIH0Ft2NhZcud048ujr6wk8JtUiz
+pL1aLvlDE9y2Z1jPpfFDxq7TbOLK37vc67hzNjp8W8c9ObvswItRM/4qmtJyUXdo
+3+H6E43IecKlj/0+qTNttHFl98ejz4zqHrYqpyp0Q2V23I/MhL6DmYvL5uwKqQxr
+FXqW1h3cc0WbPOFGrXbk8j8rqmbUT1z5zYV5Z10iWNSxZefiyvhwIaXkN+S+Wg+f
+jDu06cp6ucJe/W5L6Jpoa/bVcZ2lEyv4dbNFlxKZ6ZpQf2Hq5uIPcNC5puMlxbVL
+lPZltfVo26rW3pbGp74DOwYPD6tLrc65O3src/9+Vk3bz8VfzTylGVcTtbD9tQ4t
+88PpLOVee9dncQ1tU0IiG08Vdmccu64PL2kt6zs28qOuqLWZzznjbeU1G2/VHYht
+KhtVWL7UfnPt5aRA2/3954+M69Eenlb6Tu+z1yudWbFJ1/Y1TIaaHnCjNPF0VVrY
+gvXlKeeuTYkQdrz/9Ky/pyY0rOwrzHsickzV7uvNr5v3zn/bVlj0+4rVpa+eq/u6
+K7l17HkYnBAZOju3ImP89mV7WtYuj0m9u3XDQkPqmV13crSHswKD7Yu+Hb19Wdcu
+V/fMmNvzTvyy9+Lxzi82r7pVv3T6C9Fi6vGNpSfXB0W9kjrtUMev/wA=
+=pK3q
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x02-tips/gitlab-pages.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt" />
+  <updated>2020-05-01T18:11:54Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+Sites made by *Make TXT Site* are simple to be hosted. Gitlab pages is a great
+way to do that.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Gitlab Pages
+- 0x03 Signature
+
+---[[ 0x02 Gitlab Pages ]]------------------------------------------------------
+
+All you need is to create a `.gitlab-ci.yml` file in root directory. A example
+content to this file:
+
+```
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```
+
+Maybe you have to change somethings in these file, for example `public` and 
+`master` to correspond your posts directory and branch but it isn't likely.
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVHtMFEcY54ArsJYKwYBSISMarpDbOx5K7FkJiFWxBZRSS0S927sb7hb2di+7
+g+X0DKIVxUeDbaGFoIFSMLFK1FpRWnm2IA9La1BroTaigdhUCYq0Ba2dvQU5+kfT
+1NnN5Jvv8Zvf98gUebu5eMrk1rJ1a3y++1B2Ur5U72OiEUPpSStlgoIK5aItJ4rK
+wPTSikuS/qmc+icdJpXP/Ihpf7u0Y7sd70AKsIsbVohWZxmb7dN+M1CkT6WwAwX2
+ILX2Z2oSC6Rklm6aNADJzxlFK31apV2r1EqcJLUYZpcoTqFotZK3xJ2YkdS/Lr0N
+rKYZY2ulQHNgbWs9S3P8f401I2QVNGq1CQNQOF4ltUhFc2oLlQ1J3CRSoBEkCJIk
+MzJARG5EBEhkEc+BzZvJ51kE8RbGFYCFMkIxhfAkfB9IS08Doj4cUDwEAm2xMhAg
+DughMHMCgkYVzlVkCBxDBGgBUMDEQwoR71I20dPIAWSmkMqJcSRI4xKel6/ImHTK
+Xzo4oCUxaorZOpGZpIvGyZhYCuXwzhWc6fm/iRFEPMMAG5cDWAiNYilw+gaxFhAX
+RTfZStJAq2wWRgcyaVxKmgU8xyFgpHloQBxvU4F4AHMpsc6EgWMRZJEIg8wYTozQ
+EIROpyNoC6aqARRjpVmoYfAVAiIIRw80eNYE5DAboZXhbOLZwNNWJFpIAA1mDiiS
+OQzJmqQOqVQqBbZRPKIzKQNyQADcUWSeFElgzdEztAEfOJaxSUAWCg8A76BDJFE2
+PBJi7mZqq2NCDGaKNeGR4SzQcZMg5orMUICOPJQgk+OnMgU6CV4HKNYICJ2ErHPA
+cDwPBSuH9RidB1Y8dcJ0uRwBep5iDWagz0GAxr/AKhBg6GzI2Jynzqn3zzN7BFHo
+Gu3uIvN0CfJf4L6+OGXWezXU20l9DZ5Tb6vcVXxHXQgvnylN4/HZE/JIt7YVce8L
+b9xde2tt3uy5T85uPBTccjrI/ldG/Z4RdUdU1BxbGLNhj17n3rugrfx2ycfbs1xn
+ff/bmZMx1P0TsmNwPGakTdnzybbBpQNL3LPPptSH3AzyG2v8s6D/3v2mH3LKs1oT
+5iXd8Ove0th+70aubDSio+vK8JyAuKu9EYtD6iaGFirPh6W6cUmPDYe6TQe+TiuJ
+Lm5u6v4sMH/h2CpP+/ami83eeXUP4t1Tv+zzi03xON/2UsD8+sGyeK9e/4kvgi76
+jrru31t9OXF3mH9tmtba6Xdh+zfKZWPq0s7Lc5cXvWoYGNF+dC1m/EHXoqS6Lr9d
+RQ93lSoVlZpz8ivC+krzCwFM1eelazwvvb6c3XehOjz9VPnP/TK/0JtZx2sCYnue
+zl8CFynDL/ncaTsQsuF6QYViKHtb4pwhzo0MiHy0slOQL/cdH9tRnlV0PbAqeKKy
+I6r59NPOjuFvg8H4T7Jf/Y/F3Lm10qPyx/Tjj3p9j+7fcTi0IlTV8ctrZSFn956S
+aZfFLqlv3NpTWLJi1LPdmhyaWrWz4nDiUODuxoNfpTxueRK3sep28eOozsZDJ30a
+5Pkve0SGLK49V/Np7ZEEpuGVdu+hDzS22KiBecbkhNi7R+TRm65U5m/ad3DgTN/V
+wtD5/XUtXqNp1wq81av/eOf36p3DGdrm1DcDHsaqI/OUTaUuE6sGzS8e/Rs=
+=tFng
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x02-tips/vim.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x02-tips/vim.txt" />
+  <updated>2020-05-01T18:14:28Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x02-tips/vim.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+A simple vim configuration to made these type of files better to edit.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Vim Configs
+- 0x03 Signature
+
+---[[ 0x02 Vim Configs ]]-------------------------------------------------------
+
+Put these in your `.vimrc`:
+
+```
+set tw=80
+set colorcolumn=80
+hi ColorColumn ctermbg=darkgrey guibg=darkgrey
+```
+
+---[[ 0x03 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwMHIWjArwEPg3GTGtcxfktjLMnP1SipK4tZMNFFAgHgQgLDQBWEIqgAq
+CFfHhVBfAyGB8jVAUgGioQZEAAVAsshsoHQNQh2KKRCop16joA5UoRtfAxfWBTJ0
+IdIQm6ASChB1yKbEQ2C8Tk28TjzETRBhkLYaiBNhpsTHQ1RD3M6F4im8IKlSwT0z
+J+XwwuLMfAWvw7vyMvOLiNWbUVJSUGylr58ONCARqF8vPbMkJzFJLzNfPzcxO1UX
+GEm6xZklqVxcurq60dEKBhUGBgqeeSVF+QqxsbqUAC4uR4XizNyCnFQFYGpQSM7P
+S8tMLy1KLMnMz1MoyVfITUxJVSjJSC0GkpUFqQr5aQppmTmpxQpJqSUlqUUgJakp
+mSV6SC4zVAjJd6bUXSCX6SL5E8IBGw1hGimEAd3rDHZvMUTIWCE4Mz0vsaS0CDmg
+UBSS7ywuroDSEmhIZOYpVOaXFikk6AHDrCg5wYqLKyEhgas4Faig3NbCAMxKzs/J
+LwISpbl5IKGMTKAbgCLOYBGFZGDg5Sal26YkFmWnF6VWKqSXZiJxweYh/IDkM0oC
+lourk8mYhYGRg0FWTJElcKo/d8uyxFDf2/s4YOUCKxOoMGDg4hSAi7ALMEycN+dT
+otizMr5FTSlf/6pYaBXfWHdubrfDnt7He6fOns53yC9i0u8zXdJ3Sl9U6DH+uGtR
+ZhuUmfbokJmV3aynZYwOBv9yZaaX31q+v2Tfxq3TLszS7/I8meIUwZt7RsX/XIvi
+pYadExUDDqS8+2W2tXf9utP1z+zlfhzYGn7MKWhr8rak17kyoauvXZxzSEGvbC/D
+dcGliTr/T99bGmm42O21h+SJ80eTvopGH5v1z24B07YN8y9uc1jG3PXBP/9pBa/i
+LXd5t1kZOxlf75/+e9PmBsX/n+a3tv82T/2SNj0nObiH9fiSr/v4l019lxi9femt
+mEWrF/m5sb8P9HqaWTJ9Vb274+6365wvrlh21WybV7GzjdNJ5lOb7kVtlC2Ie6h3
+7++n8is9Jg9XqgqdnG17PfmzcdF/o+Tsdx0CMV8enZi3+67ucUN5t0tBXPeadxzs
+rlI2z5mWcdlqvUXkbU1Rhy6b8irTrKN+7LcPGXuvz9ndvlzjNU9tu2vHyt9VSfN3
+TvByv17H2dGyrCda/tZZB38fG/Xis6Km01LmpQo2Fe65v2vZqrYML/VC7kTpc4t2
+tU+XXHrs7iwOpRkW5w7PnPHvkAa/ZdrGzqvTLmhu3753qbjf1xoJi2OZ0tXHj59N
+iUyocDO+ERHHoC7C13i5/Hi367lNajeUlmSd/Kx3w9JmpfDEPRGRFqEnLL5t4V/K
+WJjym1ciz2ADAA==
+=ebQ0
+-----END PGP MESSAGE-----</content>
+</entry>
+</feed>
