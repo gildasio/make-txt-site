@@ -3,93 +3,11 @@
   <title>Make TXT Site</title>
   <link href="https://gildasio.gitlab.io/make-txt-site/priv_atom.xml" rel="self" />
   <link href="https://gildasio.gitlab.io/make-txt-site/"/>
-  <updated>2020-05-01T18:16:42Z</updated>
+  <updated>2020-05-01T18:24:31Z</updated>
   <id>https://gildasio.gitlab.io/make-txt-site/</id>
   <author>
     <name>gildasio</name>
   </author>
-<entry>
-  <title>0x01-features/gpg.txt</title>
-  <link href="https://gildasio.gitlab.io/make-txt-site/0x01-features/gpg.txt" />
-  <updated>2020-05-01T17:56:16Z</updated>
-  <id>https://gildasio.gitlab.io/make-txt-site/0x01-features/gpg.txt</id>
-  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
-          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
-          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
-          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
-  
-                                       by Gildásio Júnior
-                                       https://gildasio.gitlab.io/make-txt-site
-
----[[ 0x00 Intro ]]-------------------------------------------------------------
-
-This topic explain how *Make TXT Site* use GPG improving user security.
-
----[[ 0x01 ToC ]]---------------------------------------------------------------
-
-- 0x00 Intro
-- 0x01 ToC
-- 0x02 Signing
-- 0x03 Verify
-- 0x04 Signature
-
----[[ 0x02 Signing ]]-----------------------------------------------------------
-
-As *Make TXT Site* works with txt files it's to sign a post file.
-
-To use this feature you need to have a key configured in your keyring GPG file.
-
-After create and edit your post you can run `make sign <filename>`.
-
-This command will generate a sign to that file and append it to the same file.
-This way it's a standalone file and its signature.
-
-> You can sign index.txt files as well.
-
----[[ 0x03 Verify ]]------------------------------------------------------------
-
-After signing a post/file your users can verify that file to improve integrity.
-
-To do so, there is a simple command:
-
-```
-curl $POST_URL | gpg --verify
-```
-
----[[ 0x04 Signature ]]---------------------------------------------------------
-
------BEGIN PGP MESSAGE-----
-
-owGlVQ1QFFUcP5CPc9GwzIto1KcRkN4eCOgUpAI6g594yhmGA8dy9+7uxbF77i4e
-Nx2l6IyIgiipYJphRDXyMaBTagMlDkVGFIWKoqNlZebIKEQwftHbfQd31kzTDG9v
-9t7+P37/3/v939stnThOofTytR3QLpnUUeZV6+ed5W+2mTVinphRs/MOcA+9NMjs
-n8aRnyvAZRyNo9zxTnLHfie+A5LglG7YIHk959jtdMc9hkIuTZgThOEIWu8cNdN4
-QhM3qeRyABLniaInl17t1Kv1hBMxS2lOQnEERa8n0YQ79dii/nNkOUASshrPVAqI
-A8vOnGIRx//fXIso2oTYiAgzBmBwvsaMRCuTpUFcRA6TDWncJFpAIqQomqbXrweR
-eZGRYCkr8hxIT6fHMihKZ0ECEDkbMgCYZ7MyiAUWzg5mrcSFgW6dDqTgwrNArgBB
-kjYJoBwbz21ErFmy8ECAhlweiQ6NB7U5QMctGisxiRrtsVDyIEOTaRQmZmYxEfIY
-DV6FPDI5yFOM7GTEXN5Ts9GUsZGjqAThX/rYOT5bAHYkWgDuFjAhKxQAEsMkbYGA
-ywIG2DiBeLBaOk6WVJTUN0GZKXBwuYCF0CilWJiNEKdkQwcwcKwJmXGAEeDm4CBe
-MvPSOqSOuAATTCLuh4HHWDiRNQJoRCKJlutK4AaGBXwuCzKlXUVYvSKls0wOXJCp
-cW0GA5eTIwHYkdUKzJCFvAxJ4jE10cKQZchlGJsN4j9cS3ZhWAzmIiXD2RkHEQIj
-iDiDsXIsdOcjUZCRZQkwhQXgNRdTuR5ijTBP45aUwYDQavXcbyOtH+OWG5FQcO0R
-0q8Imagso7ThBZnZRlLPLQReOjkYEBMWodl1JHCTjbj7nFoSBjcYySLgSJziUjmW
-ojIzMyl8iqwgRLsqRadfu2YFfo3hdzOgaVJIjnCv12Nzj2XJFLXdO9pH4aVUTFXN
-8Fm9d1XA1mpm7cqeZuXIV8LXW/o0KKjxk0Ys0y2B930m+tZPK9o1eNfObT5U/7Mw
-zXuhI628qoQ3LTI2wjpBTaPY+2ftrQOJj65V1uxZcVFwtFckxhcObt7dzXeVPbvh
-w4TWc2VN6q7Owmv+TU82D58eXJIAbujKX8x/L+DUTBWVHNpcmzzOOOX7RM2b3+zZ
-UHcraH/wGa/DRVOe9x2ekz60bvztRftrbyzrX6F4kDLI+08wgYMNNwviDWknci+A
-N5bXLN1y5GwiimVsk+/92LGj/d3o1PAdX2r7frj9evJzp4N21ncNtSxX3LF/3Vul
-7A5+SbX7QV19X9/12xWx5w8+PBfkF9TjjL80N7wUNV6I5xVHKncW/tRQfb6jsqI8
-fO1RwW99/760eWB1w6SBXdTchk2B/b92aCd/AT5um/pyZ9i24IA0reXqcbj1WLSt
-u+CD6Nm9h2Miyyd7b0v7ZHbR28Jvv6RPOJ2n+urAkm8vZcfs0SU/CtPFBed3zp/3
-R3WxttPS5vz8M2sbl9G++UDL5ZQXNDOOrHliuOlKaFdJ6vbAUNXChqiiWtWVuHym
-pJhNj5pnrPtIe+Wp745fLFe/Vba3Mj5Z/H3B3dZ3lE1c8a3pIc1+vsN9QclwZkhP
-VEBpY8Hqli3+D2+FLG672ptaFXd5ABgLhrQnVEfTNj3krwdrmljbhYFjtdfN1p6W
-kEP7uv96xsIVa8VPbwK98v2+1HsVf+57OmP+yZN/Aw==
-=qW1X
------END PGP MESSAGE-----</content>
-</entry>
 <entry>
   <title>0x00-starting.txt</title>
   <link href="https://gildasio.gitlab.io/make-txt-site/0x00-starting.txt" />
@@ -272,88 +190,6 @@ eKX2o+NvlL9z8YnoLYOrfn75vqzj9IXv3/Ff
 -----END PGP MESSAGE-----</content>
 </entry>
 <entry>
-  <title>0x01-features/hidden-posts.txt</title>
-  <link href="https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt" />
-  <updated>2020-05-01T18:06:26Z</updated>
-  <id>https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt</id>
-  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
-          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
-          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
-          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
-  
-                                       by Gildásio Júnior
-                                       https://gildasio.gitlab.io/make-txt-site
-
----[[ 0x00 Intro ]]-------------------------------------------------------------
-
-I know there are texts you don't want to be made public, me too. Because of
-that, *Make TXT Site* provide this feature.
-
-I will explain how to use hidden posts feature in *Make TXT Site*.
-
----[[ 0x01 ToC ]]---------------------------------------------------------------
-
-- 0x00 Intro
-- 0x01 ToC
-- 0x02 Hidden Posts Feature
-- 0x03 Signature
-
----[[ 0x02 Hidden Posts Feature ]]----------------------------------------------
-
-First of all you must have configured some variables in `Makefile`, as discussed
-in `/0x00-starting.txt`, they are:
-
-- `HIDDEN_INDEX`
-- `HIDDEN_PATTERN`
-
-These variables are used to create the hidden posts lists and exclude hidden
-posts from normal public index.
-
-For example if you `HIDDEN_PATTERN` is `priv_` so create posts following that
-pattern in posts directory and they will be treated as hidden posts:
-
-- public/priv_example.txt
-- public/priv_secret.txt
-
-These posts will not be listed in normal public index but in hidden index as
-well.
-
----[[ 0x03 Signature ]]---------------------------------------------------------
-
------BEGIN PGP MESSAGE-----
-
-owGlVQ1QFFUcB0UG1y4tRpr86qUlA9zeWU5U6OTINyFIcJqhcvfuduHeuLd77r7j
-OL0GNR0lJhE/8GP8QCzToSaVECtBQkMniQoU8Wsy0CwbjNFSIcXeu72Tk3GaGt/e
-vnn7//z9f///3q7RDA4ICRxi35KRPKJ5XeCnwax5hBVxHC+ydknBig4X4JxPSjJB
-/zLSpZ4GCn0/r4FX+MCO6bd3qzvRu8kOVAc33YiAav3PRO3ut3soinrpwt0gnFiw
-RvcDMUsOrKpWM3kVQLXzj2JUL6PWbdQaVUyqmLq5VYi+KEajaq1iZx4q6l+X2QWS
-kMAd3akgCbx59EsRSfJ/9bVibFdi9Po8EgASf10ewgI065Ckt8EFPEuaxCoI8wzD
-suzcuWBSwaRJIEXEsgTmz2cfZzFMClggSk6ArbzMA0huzBdgBbgkB+AkMRwDJxQx
-wBIw88AGOR7YHWYBWbTARkwlSQdieQt0KDyQchlshVgLItMIZmCYYwBZBHMksMtS
-PiKO2IoUkMtD7JB5HU3sRIIA+AK7AJEIrBSEBGgkdUCBZ0B9DoCYDAis86PjJWCQ
-4h6XDEoH60eu+uAJrR5fBskqtAwPtEQVmqqbTEDliaqgH9ejPf43UIZJRLKCCccA
-Es5oc2wO8myF+TywSGIuyiNhOaBIpCv5UEbQLPAK5cxEOctFAm/SAqgADikWh6Lw
-HEN1elorq2AoYyTm0f8CYkUmwUUHIYaSYUpOiY9PSDempMcnzDH5CTKmGwwJmekm
-hjFYecU/KZ0h0kWOdtMik4Jp5wc0VUB0hyJH2m8RHJxPzXh7Lks2IEqyDQrecSOl
-cHwB6XiiJBMfaLMLZCRyPUwMhATImJnsMso3mgghPgzeyJIgSE5SLKCzytghxrws
-UqJUPYdk3oIl2eUB56HCM6Vk+LEnDkdZ9K/FQ5MKUu9J6kVH2RygUXiCBXsUXtbU
-pJ4MooRpFsoMSUIAPaJ+YHZgqvLmV2VQYZy8IPi/DX6z+DjvBMMUDZocFBAYEjA2
-7PmgtzbMHLZ8N5yVdr4uxPdBGTKIfjwCmKEjfBJHxPC+N1bENp6cu7966O0ITXr1
-mNDMht6z6Ejg520fNldF9Kxpar5Z3JTmHNrxzIH0Ft2NhZcud048ujr6wk8JtUiz
-pL1aLvlDE9y2Z1jPpfFDxq7TbOLK37vc67hzNjp8W8c9ObvswItRM/4qmtJyUXdo
-3+H6E43IecKlj/0+qTNttHFl98ejz4zqHrYqpyp0Q2V23I/MhL6DmYvL5uwKqQxr
-FXqW1h3cc0WbPOFGrXbk8j8rqmbUT1z5zYV5Z10iWNSxZefiyvhwIaXkN+S+Wg+f
-jDu06cp6ucJe/W5L6Jpoa/bVcZ2lEyv4dbNFlxKZ6ZpQf2Hq5uIPcNC5puMlxbVL
-lPZltfVo26rW3pbGp74DOwYPD6tLrc65O3src/9+Vk3bz8VfzTylGVcTtbD9tQ4t
-88PpLOVee9dncQ1tU0IiG08Vdmccu64PL2kt6zs28qOuqLWZzznjbeU1G2/VHYht
-KhtVWL7UfnPt5aRA2/3954+M69Eenlb6Tu+z1yudWbFJ1/Y1TIaaHnCjNPF0VVrY
-gvXlKeeuTYkQdrz/9Ky/pyY0rOwrzHsickzV7uvNr5v3zn/bVlj0+4rVpa+eq/u6
-K7l17HkYnBAZOju3ImP89mV7WtYuj0m9u3XDQkPqmV13crSHswKD7Yu+Hb19Wdcu
-V/fMmNvzTvyy9+Lxzi82r7pVv3T6C9Fi6vGNpSfXB0W9kjrtUMev/wA=
-=pK3q
------END PGP MESSAGE-----</content>
-</entry>
-<entry>
   <title>0x02-tips/gitlab-pages.txt</title>
   <link href="https://gildasio.gitlab.io/make-txt-site/0x02-tips/gitlab-pages.txt" />
   <updated>2020-05-01T18:11:54Z</updated>
@@ -494,6 +330,175 @@ tU+XXHrs7iwOpRkW5w7PnPHvkAa/ZdrGzqvTLmhu3753qbjf1xoJi2OZ0tXHj59N
 iUyocDO+ERHHoC7C13i5/Hi367lNajeUlmSd/Kx3w9JmpfDEPRGRFqEnLL5t4V/K
 WJjym1ciz2ADAA==
 =ebQ0
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>priv_example.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/priv_example.txt" />
+  <updated>2020-05-01T18:21:54Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/priv_example.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+This is just a hdden post example.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Hidden Post
+- 0x03 Reference
+- 0x04 Signature
+
+---[[ 0x02 Hidden Post ]]-------------------------------------------------------
+
+This post isn't listed in public index:
+
+- https://gildasio.gitlab.io/make-txt-site/index.txt
+
+But in hidden index:
+
+- https://gildasio.gitlab.io/make-txt-site/priv.txt
+
+---[[ 0x03 Reference ]]---------------------------------------------------------
+
+More info here:
+
+- https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwMHIWjArwEPg3GTGtSwXkgQKijLL4lMrEnMLclL1SipK4tZM+qSAAPEg
+AGGhC8IQVAFUEK6OC6G+BkIC5WuApAJEQw2IAAqAZJHZQOkahDoUUyBQT71GQR2o
+Qje+Bi6sC2ToQqQhNkElFCDqkE2Jh8B4nZp4nXiImyDCIG01ECfCTImPh6iGuJ0L
+xVN4QVKlgntmTsrhhcWZ+Qpeh3flZeYXEas3o6SkoNhKXz8daEAiUL9eemZJTmKS
+Xma+fm5idqouMJJ0izNLUrm4dHV1o6MVDCoMDBQ880qK8hViY3UpAVxcIRmZxQpA
+lFVaXKKQqJCRkpKap1CQD+TAkgiSrYYKIfnOlNoJslUXyQ8QDthoCNNIwSMT7IwA
+oDMgQsYKQalpqUWpecmpEAETheDM9LzEktIi5FBB0Um+O6GhAg6FzOI89RKFnMzi
+ktQUhUxg0JQm5WQmA1kpqRVWII8QG3n6YC2gDMfF5VRaAjIrA+JYMswC5WGIUXC/
+IwURJTHExeWbX5QKdFNavkIG0DjS3AWKSN20VHC8FOtD/KcLCsdiNNcixR9lru1k
+MmZhYORgkBVTZAmc6s/dsiwx1Pf2Pg5YmcfKBCrfGLg4BWAihf78/4xm8yrOE/uq
+kRCaHlTz26FJTeavypz9Zy/zu1eI+vQ2MqrvZ2DttGPfVNdraDQ5fsV9p4C9Cw1E
+Y99zRc22PtrzMa720xq/p67rp936/qhbgGn78zylkDTlhQvdhXe5bLvA5V2sWpLo
++Vm8ZtOet+ut2jwm7Ll352DGLL8Cf/NKw4ez7/umOmfOYffkTPpatO5loLnLdusr
+nhWFrx3Dd33jlf958qK/2ed3rkuk9gukuvTOC9M6yf9+SZbZdYvKybvZ69bvmrte
+cIPJOY/3RdMzChunFDQdffuTbUofV5IRb7X0ZacUBbmzR0vy9Oq+ctrzdt+smKZ9
+f6dC1+2HO9Yv9lPL35bjFLHs1c3HXcs+cSq7Bl6sn7/OiXNSXGEg9zyd+DX/7Ffb
+vFb8ee/26ycRMfVXe1aatpembs9gyChfG/q5OJ7d83PNyd3J7+9u6ogR9uac71/5
+6NM237o192fK205n3NroxHmHfcsSrkOcazu9I770HrspJ+puLHT3270rrP/m3TV9
+0He4rOWo/pfLf/NrGyaus/GzubXk+J9Nkdv433WaJ3yfdPKJ6uy7m3ujy3P2n3tj
+U3jyS+/HOas3vP/hc+dUT5CPg1lFa/Xs6VFV3V7ZP5Ilr8yKUWReFHYs68SG7dNV
+z3tmFc2TfxeQd2dHwmGhz/b3Yrb83W7V7BR6XmHClWDTL0qH7+hxP38U/HlyteiK
+55GvAwA=
+=4iKJ
+-----END PGP MESSAGE-----</content>
+</entry>
+<entry>
+  <title>0x01-features/hidden-posts.txt</title>
+  <link href="https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt" />
+  <updated>2020-05-01T18:24:24Z</updated>
+  <id>https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt</id>
+  <content type="text">           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+I know there are texts you don't want to be made public, me too. Because of
+that, *Make TXT Site* provide this feature.
+
+I will explain how to use hidden posts feature in *Make TXT Site*.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Hidden Posts Feature
+- 0x03 Example
+- 0x04 Signature
+
+---[[ 0x02 Hidden Posts Feature ]]----------------------------------------------
+
+First of all you must have configured some variables in `Makefile`, as discussed
+in `/0x00-starting.txt`, they are:
+
+- `HIDDEN_INDEX`
+- `HIDDEN_PATTERN`
+
+These variables are used to create the hidden posts lists and exclude hidden
+posts from normal public index.
+
+For example if you `HIDDEN_PATTERN` is `priv_` so create posts following that
+pattern in posts directory and they will be treated as hidden posts:
+
+- public/priv_example.txt
+- public/priv_secret.txt
+
+These posts will not be listed in normal public index but in hidden index as
+well.
+
+---[[ 0x03 Example ]]-----------------------------------------------------------
+
+This is a hidden post:
+
+- https://gildasio.gitlab.io/make-txt-site/priv_example.txt
+
+And it isn't listed in public index:
+
+- https://gildasio.gitlab.io/make-txt-site/index.txt
+
+But in hidden index:
+
+- https://gildasio.gitlab.io/make-txt-site/priv.txt
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGlVQtQE1cUJRQrbnFKp2JrbccnVXAYNsGKtoKK8jNI+WlURqubTXYhq5vduPtC
+EolaqR0VP7WisaK1FaW2BbWOjnS0RCyFOqM47VS0firj+EUUtVrtF/vebgIROx0d
+3iZvdu+9795zzztvd03fZ4JCNb1s5bn68ONlmp29S03hFo5hWIG0iTKUtdAJZ1eX
+LQNdg8JDvetu9P98AT5jZxzRFe9WZ+R3oxmoC9x4QgbsDbxHbndX3CNZ1Esb7QbR
+KIKk3J1mEt2Qqlut5HMANS4wC6VeVKybiqVUTKoZL3OrEP1ZKEqNVrETjzT1v8Pk
+AhM5nqnfKnMimFR/QOBE6UnXWiC0yQk6XSFKQKP12kIO8rRJy4k6Kz2XJdEmkTIH
+WYIgSXLmTBDnjIsDGQKURDBrFtmTQRAZYK4gOgC0sBILaPSHrBPKwCXaASMK0RA4
+aAECKAITC6w0wwKb3cRz5lhgRaGiqAXJrJm2yywQCwhooWEsiMlCmIEh3wCmIMwx
+wCaJRRxaCC2cDApYGtolVosLOzieB6zTxtOcACwYhAhwJlWgQBGofwFAId0SawPo
+GA4MYkpPycB0kAHkqg9KavX2DaBXoeUq0NJVaKpvBEhz0lYb73uMRxgLBdXfBfO/
+Ezw1boJI5yQZIsoBjSjEe2W1o2cLXcQCsygUcIUoLQNkEW1SES1xtIlnZUyhEVNY
+wPGsMRbQMmA42WyXZZYhsE+HWydlSEuQEwrxqwFFIWG4sC4SMDdGfUZqalo2lZGd
+mpZvDDDkTjAY0iZnGwnCYGHlwKJYUmhTGby5Zgk1jIXQbY95Ds+0wCA1mHk743cT
+PglIohUIomSleZ/6UCsM60QCSBcltEbhHXAFChPdIQGkOqNN4oooIyLEj8GXWeR5
+0YGaBVi6hI2GkJUETJTqZziJNUNRcingFCoU0aKzAJU8DGYxsBeFJhWkTinqQ4fZ
+7OaRWYQFKg4fa2pRpYIgQlwFM4OKIED/0T8w2SF2+eqrNlomHCzPBx6OTmn27IBg
+lIhL9KMDW1Y6ftI32OOcEBMQsxzqQ8Yvm65+Axt9uhKqNpTcyY8T9PRw1VSdbAac
+7J7wSRDLg0eEBGlCg17rPzgkb33Oc0s+o6dmnfWG+r/WvYLxlzmI6BPut5Cnnu8Y
+VnIvtONO5NqqRasjEg5U3oqIOBNy/Fh81u4NJb94dfv1S7ZtyhxW16xPr2j7Jm5y
+5NhJN/7OvfWBYe/Wy97aLx9MaGnYWFV+5PTbtWn7T65L+7lyy6jyAYNG7Cme3vgm
+ZXUuTVwQ9mLThnnHaqLDHC+vWhY2o9XTUVBKVCUbw7lPxIjk+BjbIaE6KU90Ld6n
+50+0dIw9STTPKXrdQ0W65At1C+WZ8670027qGLnbHtO21lJcP8M1rv29nOUT86Ju
+r7Q/KEnaN92z6tQPI5fMHxtJnu1Tuvlc1fa11a0ZLfuO5F4e8s6oPaT29OxLN7P1
+nl7jJ1b0zgwZ8+Hmfvc7JE991hymjDsz2NR+RCdr6lp2vLRo9I2HJwaFDT88/t3w
+2r7VN+PvHTrf9ufwhXLD9e+HNl4rbQy6dc6xIHjTK3Urfry+dPXdk7rWry8c3Dn9
+02sDCG8iQUw7PbD6aOauYvu2q3dyDBV9NAcNv/ataxhdk+ytLN6ckpK+nvg8uKls
+5Ud3TvW/GmU51Fae2ujZ6h13IsXjjL8SlWM+2ryafFj5Qv1h59DGGqL9r/VBTdV5
+qzJrLw6sOVa0d9qzr7Zv/1bD51e4B5z/qnVP4jVj0ph5bzXcLpyy+OMN23bcNyWd
+vXuwOSHjj2WJ+SlTqUtlB+Zv3PL7iu/WLNb98xvxxah1F39a+H5k+prcqKZdQ2o0
+CzbGzyqp9cb9Cw==
+=q47K
 -----END PGP MESSAGE-----</content>
 </entry>
 </feed>

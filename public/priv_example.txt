@@ -1,0 +1,64 @@
+           _____     _          _____ __ __ _____    _____ _ _       
+          |     |___| |_ ___   |_   _|  |  |_   _|  |   __|_| |_ ___ 
+          | | | | .'| '_| -_|    | | |-   -| | |    |__   | |  _| -_|
+          |_|_|_|__,|_,_|___|    |_| |__|__| |_|    |_____|_|_| |___|
+  
+                                       by Gildásio Júnior
+                                       https://gildasio.gitlab.io/make-txt-site
+
+---[[ 0x00 Intro ]]-------------------------------------------------------------
+
+This is just a hdden post example.
+
+---[[ 0x01 ToC ]]---------------------------------------------------------------
+
+- 0x00 Intro
+- 0x01 ToC
+- 0x02 Hidden Post
+- 0x03 Reference
+- 0x04 Signature
+
+---[[ 0x02 Hidden Post ]]-------------------------------------------------------
+
+This post isn't listed in public index:
+
+- https://gildasio.gitlab.io/make-txt-site/index.txt
+
+But in hidden index:
+
+- https://gildasio.gitlab.io/make-txt-site/priv.txt
+
+---[[ 0x03 Reference ]]---------------------------------------------------------
+
+More info here:
+
+- https://gildasio.gitlab.io/make-txt-site/0x01-features/hidden-posts.txt
+
+---[[ 0x04 Signature ]]---------------------------------------------------------
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwMHIWjArwEPg3GTGtSwXkgQKijLL4lMrEnMLclL1SipK4tZM+qSAAPEg
+AGGhC8IQVAFUEK6OC6G+BkIC5WuApAJEQw2IAAqAZJHZQOkahDoUUyBQT71GQR2o
+Qje+Bi6sC2ToQqQhNkElFCDqkE2Jh8B4nZp4nXiImyDCIG01ECfCTImPh6iGuJ0L
+xVN4QVKlgntmTsrhhcWZ+Qpeh3flZeYXEas3o6SkoNhKXz8daEAiUL9eemZJTmKS
+Xma+fm5idqouMJJ0izNLUrm4dHV1o6MVDCoMDBQ880qK8hViY3UpAVxcIRmZxQpA
+lFVaXKKQqJCRkpKap1CQD+TAkgiSrYYKIfnOlNoJslUXyQ8QDthoCNNIwSMT7IwA
+oDMgQsYKQalpqUWpecmpEAETheDM9LzEktIi5FBB0Um+O6GhAg6FzOI89RKFnMzi
+ktQUhUxg0JQm5WQmA1kpqRVWII8QG3n6YC2gDMfF5VRaAjIrA+JYMswC5WGIUXC/
+IwURJTHExeWbX5QKdFNavkIG0DjS3AWKSN20VHC8FOtD/KcLCsdiNNcixR9lru1k
+MmZhYORgkBVTZAmc6s/dsiwx1Pf2Pg5YmcfKBCrfGLg4BWAihf78/4xm8yrOE/uq
+kRCaHlTz26FJTeavypz9Zy/zu1eI+vQ2MqrvZ2DttGPfVNdraDQ5fsV9p4C9Cw1E
+Y99zRc22PtrzMa720xq/p67rp936/qhbgGn78zylkDTlhQvdhXe5bLvA5V2sWpLo
++Vm8ZtOet+ut2jwm7Ll352DGLL8Cf/NKw4ez7/umOmfOYffkTPpatO5loLnLdusr
+nhWFrx3Dd33jlf958qK/2ed3rkuk9gukuvTOC9M6yf9+SZbZdYvKybvZ69bvmrte
+cIPJOY/3RdMzChunFDQdffuTbUofV5IRb7X0ZacUBbmzR0vy9Oq+ctrzdt+smKZ9
+f6dC1+2HO9Yv9lPL35bjFLHs1c3HXcs+cSq7Bl6sn7/OiXNSXGEg9zyd+DX/7Ffb
+vFb8ee/26ycRMfVXe1aatpembs9gyChfG/q5OJ7d83PNyd3J7+9u6ogR9uac71/5
+6NM237o192fK205n3NroxHmHfcsSrkOcazu9I770HrspJ+puLHT3270rrP/m3TV9
+0He4rOWo/pfLf/NrGyaus/GzubXk+J9Nkdv433WaJ3yfdPKJ6uy7m3ujy3P2n3tj
+U3jyS+/HOas3vP/hc+dUT5CPg1lFa/Xs6VFV3V7ZP5Ilr8yKUWReFHYs68SG7dNV
+z3tmFc2TfxeQd2dHwmGhz/b3Yrb83W7V7BR6XmHClWDTL0qH7+hxP38U/HlyteiK
+55GvAwA=
+=4iKJ
+-----END PGP MESSAGE-----

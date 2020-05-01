@@ -42,13 +42,16 @@ almost everywhere. This is the most important why. But there is some others:
 
 $ tree -tr
 .
-├── 0x02-tips
-│   ├── vim.txt
-│   └── gitlab-pages.txt
 ├── 0x01-features
 │   ├── hidden-posts.txt
 │   ├── gpg.txt
 │   └── atom.txt
+├── priv_example.txt
+├── priv_atom.xml
+├── atom.xml
+├── 0x02-tips
+│   ├── vim.txt
+│   └── gitlab-pages.txt
 └── 0x00-starting.txt
 
 ---[[ 0x03 Contact ]]-----------------------------------------------------------
@@ -65,38 +68,3 @@ Or mail me:
 
 ---[[ 0x04 Signature ]]---------------------------------------------------------
 
------BEGIN PGP MESSAGE-----
-
-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
-=5Sup
------END PGP MESSAGE-----
